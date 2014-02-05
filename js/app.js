@@ -6,27 +6,27 @@ $locationProvider.html5Mode(false);
 $routeProvider
     .when('/home', 
         {   
-            templateUrl: '_partials/home.html',
+            templateUrl: 'partials/home.html',
             controller: "HomeCtrl"
         })
     .when('/about', 
         {
-            templateUrl: '_partials/about.html',
+            templateUrl: 'partials/about.html',
             controller: "AbtCtrl"
         })
     .when('/work', 
         {
-            templateUrl: '_partials/work.html',
+            templateUrl: 'partials/work.html',
             controller: "ListPortfolio"
         })
     . when('/project/:id',
         {
-            templateUrl: '_partials/detail.html',
+            templateUrl: 'partials/detail.html',
             controller: "DetailWorkInfo"
         })
     . when('/blog',
         {
-            templateUrl: '_blog/',
+            templateUrl: 'blog/',
             controller: "BlogCtrl"
         })
     .otherwise( {redirectTo: '/home'});
