@@ -1,0 +1,104 @@
+
+// Grid
+// Used with the grid mixins below
+
+
+@grid-columns:  12;
+@grid-tab-columns:  6;
+@grid-mobile-columns:  3;
+
+@grid-column-padding:   15px; // Left and right inner padding
+
+
+
+@grid-tab-breakpoint: 768px;
+@grid-desk-breakpoint:  1025px;
+
+
+
+//
+// Grid system
+// --------------------------------------------------
+
+// Grid
+.make-row() {
+  // Negative margin the row out to align the content of columns
+  margin-left: -@grid-column-padding;
+  margin-right: -@grid-column-padding;
+  // Then clear the floated columns
+  .clearfix();
+}
+
+
+.make-column(@columns) {
+
+  @media (min-width: @grid-tab-breakpoint) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage(@columns / @grid-tab-columns);
+  }
+
+  @media (min-width: @grid-desk-breakpoint) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage(@columns / @grid-columns);
+  }
+
+
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left: @grid-column-padding;
+  padding-right: @grid-column-padding;
+  // Proper box-model (padding doesn't add to width)
+  .box-sizing(border-box);
+}
+
+.make-column-offset(@columns) {
+  @media (min-width: @grid-mobile-breakpoint) {
+    margin-left: percentage(@columns / @grid-columns);
+  }
+}
+
+
+
+//
+// Mixins: vendor prefixes
+// --------------------------------------------------
+
+// Box sizing
+.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model; // Safari <= 5
+     -moz-box-sizing: @box-model; // Firefox <= 19
+          box-sizing: @box-model;
+}
+
+//
+// Mixins: utilities
+// --------------------------------------------------
+
+// Clearfix
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
