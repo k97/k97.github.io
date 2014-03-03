@@ -1,0 +1,58 @@
+<main>
+	
+		<h4 class="workHeader">All things are <strong>difficult</strong> before they are <strong>easy</strong></h4>
+	<div class="container workWrapper">	
+	<div class="row">
+	<ul>
+        <li ng-repeat="project in projects" class="Three">
+        	<a ng-href="#/project/{{project.id}}" class="prImgNrml">
+	       		<img ng-src="http://localhost:9797/img/proj/_thumbs/{{project.prImgThumb}}" 
+          		alt="{{project.prID}}"/>
+        	</a>
+        	<a ng-href="#/project/{{project.id}}" class="prImgInv" 
+        	style="display:none;background:{{project.prColor}}">
+        		<img ng-src="http://localhost:9797/img/proj/_thumbs/{{project.prImgThumbInv}}" 
+          		alt="{{project.prID}}" title="{{project.prImgThumbInv}}"
+          		/>
+          	</a>
+        </li>
+    </ul>
+    </div>
+
+	</div><!--/container-->
+</main>
+
+<!--	
+	
+	<li ng-repeat="project in projects" class="Three">
+        	<a ng-href="#/project/{{project.id}}" class="tileBG" 
+				ng-style="bgstyle(project.prColor)"
+          		ng-mouseenter="hoverIn($event)"
+          		ng-mouseleave="hoverOut($event)">
+
+        		<img ng-src="http://localhost:97/img/proj/_thumbs/{{project.prImgThumb}}" 
+          		
+        		alt="{{project.prID}}" title="{{project.prTitle}}"/>
+
+        	</a>
+    </li>
+
+
+
+PRojects to be Included
+========================
+ERM
+SPM
+SON
+
+Greenware
+NPC
+Orrchid
+
+WC (Censored)
+Mobile Accountant (Screens)
+
+
+
+
+-->

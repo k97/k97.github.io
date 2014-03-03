@@ -4344,6 +4344,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -o-transition: background 0s linear;
   transition: background 0s linear;
 }
+.SimpleTrans {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 .lineShotGrad {
   background-color: #20262a;
   background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e7e5e2), color-stop(5%, #e7e5e2), color-stop(5%, #20262a), color-stop(100%, #20262a));
@@ -5155,10 +5161,6 @@ main .workWrapper ul li {
   margin: 0;
   padding: 0;
   max-height: 400px;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
 main .workWrapper ul li a {
   display: block;
@@ -5182,18 +5184,26 @@ main .workWrapper ul li a img {
 }
 main .workWrapper ul li .prImgNrml {
   display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 main .workWrapper ul li .prImgInv {
   display: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 main .workWrapper ul li:hover .prImgNrml {
   display: none;
 }
 main .workWrapper ul li:hover .prImgInv {
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   display: block!important;
 }
 main .workWrapper ul li:active .prImgNrml {
@@ -5253,10 +5263,10 @@ main .projectWrapper .carouselTile .Ctrls {
   border: none;
   cursor: pointer;
   padding: 0.8em;
-  -webkit-transition-duration: 0.4s;
-  -moz-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
@@ -5360,6 +5370,93 @@ main .projectWrapper .projectDesc p {
   font-weight: 400;
   color: #4d4d4d;
   line-height: 2.0em;
+}
+main .blogWrapper {
+  padding: 0.5em 1.0em 0 2.0em;
+}
+main .blogWrapper .poster {
+  margin: 0;
+  padding: 0;
+}
+main .blogWrapper .poster a {
+  background: #edeef2;
+  display: block;
+  text-decoration: none;
+  padding: 2.5em 2.5em;
+  border-right: 0.8em solid #ced2dd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+main .blogWrapper .poster a .postLinker {
+  display: none;
+  font-size: 2.5em;
+  font-weight: 300;
+  color: #fff;
+  background: #2486ff;
+  padding: 1.2em 1.5em;
+}
+main .blogWrapper .poster a .postLinker i {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 20px;
+}
+main .blogWrapper .poster a .posterHead {
+  font-size: 1.6em;
+  color: #434a5c;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  padding: 0;
+  margin: 0 0 0.7em;
+}
+main .blogWrapper .poster a .posterDate {
+  display: block;
+  margin: 0 0 0.7em;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #999999;
+  line-height: 2.0em;
+}
+main .blogWrapper .poster a .posterContent {
+  display: block;
+  margin: 0 0 0.7em;
+  font-size: 1.10em;
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 2.0em;
+}
+main .blogWrapper .poster a:hover {
+  background: #2486ff;
+}
+main .blogWrapper .poster a:hover .postLinker {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+  height: 840px;
+  background-color: #2486ff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+main .blogWrapper .Paginater {
+  text-align: center;
+  margin: 1.0em 0 0;
+  background: #edeef2;
+  text-decoration: none;
+  color: #2486ff;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+main .blogWrapper .Paginater .paginateLink {
+  padding: 1.5em 0;
+}
+main .blogWrapper .Paginater .paginateLink:hover {
+  background: #2486ff;
+  color: #edeef2;
 }
 @media (max-height: 680px) {
   header {

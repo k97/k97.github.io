@@ -6,27 +6,27 @@ $locationProvider.html5Mode(false);
 $routeProvider
     .when('/home', 
         {   
-            templateUrl: 'partials/home.html',
+            templateUrl: 'template/home.html',
             controller: "HomeCtrl"
         })
     .when('/about', 
         {
-            templateUrl: 'partials/about.html',
+            templateUrl: 'template/about.html',
             controller: "AbtCtrl"
         })
     .when('/work', 
         {
-            templateUrl: 'partials/work.html',
+            templateUrl: 'template/work.html',
             controller: "ListPortfolio"
         })
     . when('/project/:id',
         {
-            templateUrl: 'partials/detail.html',
+            templateUrl: 'template/detail.html',
             controller: "DetailWorkInfo"
         })
     . when('/blog',
         {
-            templateUrl: 'blog/',
+            templateUrl: 'blog/blog.html',
             controller: "BlogCtrl"
         })
     .otherwise( {redirectTo: '/home'});
@@ -69,8 +69,6 @@ function AbtCtrl($scope, PageBG) {
 
 function ListPortfolio($scope, PageBG, WorkInfo, $routeParams) {
     PageBG.setBg("hide");
-   
-
     if(localStorage.getItem('prKey')!=null){
         var data = eval(localStorage.getItem('prKey')); 
 
@@ -80,17 +78,15 @@ function ListPortfolio($scope, PageBG, WorkInfo, $routeParams) {
             localStorage.setItem('prKey',JSON.stringify(data));
         });
     }
-        $scope.projects = data;
-        
+    
+    $scope.projects = data;
+
     
 /*
     //Background Color Change
-    
     $scope.hoverIn = function(e) {
-        
     angular.element(e.srcElement).removeClass('tileBG')
     }
-    
     $scope.hoverOut = function(e) {
     angular.element(e.srcElement).addClass('tileBG')
     }
@@ -114,18 +110,16 @@ function DetailWorkInfo($scope, PageBG, WorkInfo, $routeParams) {
     $scope.project = data[id];
     return data[id];
     
+	//var id = $scope.prID = $routeParams.prID;
+	//$scope.project = WorkInfo.get(id);
+	//$scope.project = WorkInfo.get(projectID);
+}//DetailWorkInfo
 
-         
-}
+
 
 function BlogCtrl($scope, PageBG) {
     PageBG.setBg("hide");
 }
-
-
-//    var id = $scope.prID = $routeParams.prID;
-    //$scope.project = WorkInfo.get(id);
-    //$scope.project = WorkInfo.get(projectID);
 
 
 
