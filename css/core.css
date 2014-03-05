@@ -4507,146 +4507,6 @@ body {
   background-image: url(../img/noise.png);
   opacity: 0.075;
 }
-header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 6;
-  width: 300px;
-  border-right: 0.4em solid #20262a;
-  background: #2b3238;
-  color: #e7e5e2;
-}
-header #theLogo {
-  text-align: center;
-  margin: 0 0 3.0em 0;
-}
-header #theLogo img {
-  width: 45%;
-  height: 45%;
-  background: #2486ff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  padding: 0.3em;
-  margin: 3.0em 0em 0 0em;
-}
-header .subTitle {
-  width: 100%;
-  text-align: center;
-  background: #20262a;
-  font-size: 1.2em;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 0.05em 0;
-  margin: 0 0 3.0em 0;
-}
-header .footerLink {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  background: #20262a;
-  font-size: 1.1em;
-  padding: 0.05em 0;
-  font-weight: 300;
-}
-header .footerLink i {
-  margin: 0 20px 0 0px;
-}
-header .lineCap {
-  width: 1px;
-  height: 70%;
-  float: left;
-  position: absolute;
-  left: 60px;
-  bottom: 00px;
-  z-index: -10;
-  background-color: #20262a;
-}
-header nav {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-header nav ul {
-  list-style: none;
-  z-index: 9;
-}
-header nav ul li {
-  margin: 1.5em 0em;
-}
-header nav ul li a {
-  color: #e7e5e2;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.0em;
-}
-header nav ul li a .horiLineCap {
-  width: 225px;
-  height: 1px;
-  position: absolute;
-  margin: 6% 0;
-  z-index: -1;
-  background-color: #20262a;
-  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e7e5e2), color-stop(5%, #e7e5e2), color-stop(5%, #20262a), color-stop(100%, #20262a));
-  background: -webkit-linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
-  background: -moz-linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
-  background: -o-linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
-  background: linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
-  background-position: 100% 0;
-  -webkit-background-size: 200% 100%;
-  -moz-background-size: 200% 100%;
-  -o-background-size: 200% 100%;
-  background-size: 200% 100%;
-  -webkit-transition: background 0s linear;
-  -moz-transition: background 0s linear;
-  -o-transition: background 0s linear;
-  transition: background 0s linear;
-}
-header nav ul li a i {
-  border: 1px solid #20262a;
-  background: #3d4247;
-  margin: 0em 0 0 0;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 0.8em;
-  padding: 0.8em;
-  line-height: 1.0em;
-  color: #e7e5e2;
-  float: left;
-  clear: both;
-}
-header nav ul li a p {
-  display: inline-block;
-  width: 4.0em;
-  padding: 0.05em 1.0em;
-  margin: 0.2em 0em 1.0em 2.2em;
-  text-transform: uppercase;
-  font-size: 0.90em;
-  line-height: 2.0em;
-  border: 1px solid #20262a;
-  background: #3d4247;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-}
-header nav ul li a:hover > span {
-  background-position: -100% 0;
-  -webkit-transition: background 0.4s;
-  -moz-transition: background 0.4s;
-  -o-transition: background 0.4s;
-  transition: background 0.4s;
-}
 .cf {
   *zoom: 1;
 }
@@ -4759,7 +4619,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Two {
     float: left;
     width: 16.666666666666664%;
@@ -4773,7 +4633,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Three {
     float: left;
     width: 25%;
@@ -4787,7 +4647,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Four {
     float: left;
     width: 33.33333333333333%;
@@ -4801,7 +4661,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Five {
     float: left;
     width: 41.66666666666667%;
@@ -4815,7 +4675,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Six {
     float: left;
     width: 50%;
@@ -4829,7 +4689,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Seven {
     float: left;
     width: 58.333333333333336%;
@@ -4843,13 +4703,13 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Twooff {
     float: left;
     width: 8.333333333333332%;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Twooff {
     margin-left: 8.333333333333332%;
   }
@@ -4862,7 +4722,7 @@ header nav ul li a:hover > span {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@media (min-width: 769px) {
+@media (min-width: 850px) {
   .Twelve {
     float: left;
     width: 100%;
@@ -5458,6 +5318,243 @@ main .blogWrapper .Paginater .paginateLink:hover {
   background: #2486ff;
   color: #edeef2;
 }
+header {
+  background: #2b3238;
+  color: #e7e5e2;
+}
+header .subTitle {
+  width: 100%;
+  text-align: center;
+  background: #20262a;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.05em 0;
+  margin: 0 0 3.0em 0;
+}
+@media (max-width: 850px) {
+  header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+  }
+  header #theLogo {
+    text-align: center;
+    margin: 0 0 1.5em 0;
+  }
+  header #theLogo img {
+    width: 20%;
+    height: 20%;
+    background: #2486ff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0.3em;
+    margin: 1.50em 0em 0 0em;
+  }
+  header .subTitle {
+    margin: 0;
+  }
+  header .footerLink {
+    display: none;
+    clear: both;
+  }
+  header nav:before,
+  header nav:after {
+    content: " ";
+    display: table;
+  }
+  header nav:after {
+    clear: both;
+  }
+  header nav {
+    width: 100%;
+    display: block;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  header nav ul li a {
+    float: left;
+    width: 49.6%;
+    line-height: 2.2em;
+    color: #e7e5e2;
+    background: #2b3238;
+    border-bottom: 1px solid #20262a;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  header nav ul li a .horiLineCap {
+    display: none;
+  }
+  header nav ul li a i {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9em;
+  }
+  header nav ul li a p {
+    display: inline-block;
+  }
+  header nav ul li a:nth-child(odd) {
+    border-left: 1px solid #20262a;
+  }
+  header nav ul li a:hover,
+  header nav ul li a:active {
+    background: #2486ff;
+    color: #edeef2;
+  }
+  main {
+    margin: 0em 0px 0 0px;
+  }
+  #topPanel,
+  .bimmerLines {
+    display: none;
+  }
+}
+@media (min-width: 851px) {
+  header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+    width: 300px;
+    border-right: 0.4em solid #20262a;
+  }
+  header .subTitle {
+    margin: 0 0 3.0em 0;
+  }
+  header .footerLink {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background: #20262a;
+    font-size: 1.1em;
+    padding: 0.05em 0;
+    font-weight: 300;
+  }
+  header .footerLink i {
+    margin: 0 20px 0 0px;
+  }
+  header .lineCap {
+    width: 1px;
+    height: 70%;
+    float: left;
+    position: absolute;
+    left: 60px;
+    bottom: 00px;
+    z-index: -10;
+    background-color: #20262a;
+  }
+  header nav {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  header nav ul {
+    list-style: none;
+    z-index: 9;
+  }
+  header nav ul li {
+    margin: 1.5em 0em;
+  }
+  header nav ul li a {
+    color: #e7e5e2;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.0em;
+  }
+  header nav ul li a .horiLineCap {
+    width: 225px;
+    height: 1px;
+    position: absolute;
+    margin: 6% 0;
+    z-index: -1;
+    background-color: #20262a;
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e7e5e2), color-stop(5%, #e7e5e2), color-stop(5%, #20262a), color-stop(100%, #20262a));
+    background: -webkit-linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
+    background: -moz-linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
+    background: -o-linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
+    background: linear-gradient(left, #e7e5e2, #e7e5e2 5%, #20262a 5%, #20262a);
+    background-position: 100% 0;
+    -webkit-background-size: 200% 100%;
+    -moz-background-size: 200% 100%;
+    -o-background-size: 200% 100%;
+    background-size: 200% 100%;
+    -webkit-transition: background 0s linear;
+    -moz-transition: background 0s linear;
+    -o-transition: background 0s linear;
+    transition: background 0s linear;
+  }
+  header nav ul li a i {
+    border: 1px solid #20262a;
+    background: #3d4247;
+    margin: 0em 0 0 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 0.8em;
+    padding: 0.8em;
+    line-height: 1.0em;
+    color: #e7e5e2;
+    float: left;
+    clear: both;
+  }
+  header nav ul li a p {
+    display: inline-block;
+    width: 4.0em;
+    padding: 0.05em 1.0em;
+    margin: 0.2em 0em 1.0em 2.2em;
+    text-transform: uppercase;
+    font-size: 0.90em;
+    line-height: 2.0em;
+    border: 1px solid #20262a;
+    background: #3d4247;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  header nav ul li a:hover > span {
+    background-position: -100% 0;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+  }
+  header #theLogo {
+    text-align: center;
+    margin: 0 0 3.0em 0;
+  }
+  header #theLogo img {
+    width: 45%;
+    height: 45%;
+    background: #2486ff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0.3em;
+    margin: 3.0em 0em 0 0em;
+  }
+}
 @media (max-height: 680px) {
   header {
     overflow-y: scroll;
@@ -5465,5 +5562,126 @@ main .blogWrapper .Paginater .paginateLink:hover {
   }
   header .footerLink {
     position: relative!important;
+  }
+}
+/* Make clicks pass-through */
+#loading-bar,
+#loading-bar-spinner {
+  pointer-events: none;
+  -webkit-pointer-events: none;
+  -webkit-transition: 350ms linear all;
+  -moz-transition: 350ms linear all;
+  -o-transition: 350ms linear all;
+  transition: 350ms linear all;
+}
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+  opacity: 1;
+}
+#loading-bar .bar {
+  -webkit-transition: width 350ms;
+  -moz-transition: width 350ms;
+  -o-transition: width 350ms;
+  transition: width 350ms;
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+}
+/* Fancy blur effect */
+#loading-bar .peg {
+  position: absolute;
+  width: 70px;
+  right: 0;
+  top: 0;
+  height: 2px;
+  opacity: .45;
+  -moz-box-shadow: #29d 1px 0 6px 1px;
+  -ms-box-shadow: #29d 1px 0 6px 1px;
+  -webkit-box-shadow: #29d 1px 0 6px 1px;
+  box-shadow: #29d 1px 0 6px 1px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+#loading-bar-spinner {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 10px;
+  left: 10px;
+}
+#loading-bar-spinner .spinner-icon {
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 10px;
+  -webkit-animation: loading-bar-spinner 400ms linear infinite;
+  -moz-animation: loading-bar-spinner 400ms linear infinite;
+  -ms-animation: loading-bar-spinner 400ms linear infinite;
+  -o-animation: loading-bar-spinner 400ms linear infinite;
+  animation: loading-bar-spinner 400ms linear infinite;
+}
+@-webkit-keyframes loading-bar-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes loading-bar-spinner {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes loading-bar-spinner {
+  0% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes loading-bar-spinner {
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-bar-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

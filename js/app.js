@@ -1,6 +1,6 @@
 'use strict';
 
-var k97App = angular.module('k97App', ['ngRoute', 'angular-carousel']);
+var k97App = angular.module('k97App', ['ngRoute', 'angular-carousel','angularShamSpinner']);
 k97App.config(function ($routeProvider, $locationProvider) {
 $locationProvider.html5Mode(false);
 $routeProvider
@@ -19,12 +19,12 @@ $routeProvider
             templateUrl: 'template/work.html',
             controller: "ListPortfolio"
         })
-    . when('/project/:id',
+    .when('/project/:id',
         {
             templateUrl: 'template/detail.html',
             controller: "DetailWorkInfo"
         })
-    . when('/blog',
+    .when('/blog',
         {
             templateUrl: 'blog/blog.html',
             controller: "BlogCtrl"
