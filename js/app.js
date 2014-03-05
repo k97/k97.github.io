@@ -1,6 +1,6 @@
 'use strict';
 
-var k97App = angular.module('k97App', ['ngRoute', 'angular-carousel','angularShamSpinner']);
+var k97App = angular.module('k97App', ['ngRoute','angularShamSpinner','angular-flexslider']);
 k97App.config(function ($routeProvider, $locationProvider) {
 $locationProvider.html5Mode(false);
 $routeProvider
@@ -81,22 +81,13 @@ function ListPortfolio($scope, PageBG, WorkInfo, $routeParams) {
     
     $scope.projects = data;
 
-    
-/*
-    //Background Color Change
-    $scope.hoverIn = function(e) {
-    angular.element(e.srcElement).removeClass('tileBG')
-    }
-    $scope.hoverOut = function(e) {
-    angular.element(e.srcElement).addClass('tileBG')
-    }
-*/
+
 }
 
 function DetailWorkInfo($scope, PageBG, WorkInfo, $routeParams) {
     PageBG.setBg("hide");
     $scope.searchToggle = true;
-    $scope.currentSlide = 1;
+    
     
     var id = $scope.id = $routeParams.id;
     if(localStorage.getItem('prKey')!=null){
@@ -109,10 +100,7 @@ function DetailWorkInfo($scope, PageBG, WorkInfo, $routeParams) {
     }
     $scope.project = data[id];
     return data[id];
-    
-	//var id = $scope.prID = $routeParams.prID;
-	//$scope.project = WorkInfo.get(id);
-	//$scope.project = WorkInfo.get(projectID);
+
 }//DetailWorkInfo
 
 

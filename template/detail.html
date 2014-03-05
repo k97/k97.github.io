@@ -4,19 +4,15 @@
 	</h4>
 	
 	<div class="projectWrapper container">	
-
-		<div class="row">
+                
+		<div class="row projectRow">
 			<div class="Six carouselTile">
+                <flex-slider slide="items in project.prImgs" animation="slide">
+                    <li>
+                        <img ng-src="../img/proj/{{items}}">
+                    </li>
+                </flex-slider>
 
-				<ul class="image carouselImg" rn-carousel rn-carousel-indicator rn-carousel-index="currentSlide">
-					<li ng-repeat="items in project.prImgs">
-					 <img ng-src="../img/proj/{{items}}"/>
-      				</li>
-    			</ul>
-    			
-    			<button class="Ctrls prevSlide" ng-click="currentSlide = currentSlide - 1" ng-disabled="currentSlide == 0"><i class="icon icon-arrow-left4"></i></button>
-				
-				<button class="Ctrls nextSlide" ng-click="currentSlide = currentSlide + 1"  ng-disabled="currentSlide == ({{project.prImgs}}).length - 1"><i class="icon icon-uniE7B8"></i></button>
 
     		</div><!--/Six-->
 

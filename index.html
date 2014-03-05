@@ -12,7 +12,8 @@
 	k97 Weblog
   	</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
     <!-- build:css(.tmp) css/core.css -->
     <link rel="stylesheet/less" type="text/less"  href="less/core.less">
     <!-- endbuild -->
@@ -98,11 +99,14 @@
 
     
 
+	
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="vendor/less.js/dist/less-1.5.0.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/angular/angular.min.js"></script>
+
     <script src="vendor/angular/angular-route.min.js"></script>
     <script src="vendor/angular/angular-touch.min.js"></script>
     <!-- endbower -->
@@ -117,11 +121,10 @@
     <script src="js/bg/fss-config.js"></script>
     <script src="js/angular-sham-spinner/angular-sham-spinner.js"></script>
 
-    <!-- include carousel src -->
-    <script src="js/slides/angular-carousel.js"></script>
-    <link href='js/slides/angular-carousel.min.css' rel='stylesheet' type='text/css'>
-    
-    
+    <!-- flex slider -->
+    <script src="js/flex/jquery.flexslider.js"></script>
+	<script src="js/flex/angular-flexslider.js"></script>
+	
 
 </body>
 </html>
