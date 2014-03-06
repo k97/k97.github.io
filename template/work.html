@@ -6,12 +6,12 @@
 	<ul>
         <li ng-repeat="project in projects" class="Three">
         	<a ng-href="#/project/{{project.id}}" class="prImgNrml">
-	       		<img ng-src="../img/proj/_thumbs/{{project.prImgThumb}}" 
+	       		<img ng-src="img/proj/_thumbs/{{project.prImgThumb}}" 
           		alt="{{project.prID}}"/>
         	</a>
         	<a ng-href="#/project/{{project.id}}" class="prImgInv" 
         	style="display:none;background:{{project.prColor}}">
-        		<img ng-src="../img/proj/_thumbs/{{project.prImgThumbInv}}" 
+        		<img ng-src="img/proj/_thumbs/{{project.prImgThumbInv}}" 
           		alt="{{project.prID}}" title="{{project.prImgThumbInv}}"
           		/>
           	</a>
