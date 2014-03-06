@@ -72,8 +72,8 @@
    
 	<div id="topPanel">
 		<div id="tweeter"></div><!--/tweeter-->
-		<div id="search" class="cf" ng-click="searchToggle = !searchToggle">
-				<div class="icon icon-search" id="searchIcon"></div>
+		<div id="search" class="cf" >
+				<div class="icon icon-heart" id="searchIcon"></div>
 		</div><!--/search-->
 		
 			
@@ -83,8 +83,18 @@
 
 	</div><!--/topPanel-->
 
+		<div id="insMsg">
+			<div class="insContainer"></div>
+			<div class="erb-image-wrapper">
+				<span id="closeIns"><i class="icon icon-close"></i>Close</span>
+		    	<img id="insBMW" data-insrc="img/bmw-i8.jpg" src="" />
+			</div>
+		</div>
+
+
+
+
 	<div class="wrapper">
-	
 		<ng-view></ng-view>
 	</div>
 
@@ -95,8 +105,8 @@
 		<!--<div id="noise" class="overlay noise"></div><!--/overlay /noise-->
 	</section><!--fxContainer-->
 
-    
-
+    <div class="cf"></div>
+	
 	
 
     <!-- build:js scripts/vendor.js -->
@@ -123,6 +133,11 @@
     <script src="js/flex/jquery.flexslider.js"></script>
 	<script src="js/flex/angular-flexslider.js"></script>
 	
+	<script>
+	
+		
+	</script>
+
 
 </body>
 </html>

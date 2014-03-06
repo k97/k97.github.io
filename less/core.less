@@ -11,10 +11,10 @@
 @import "fonts.less";				
 @import "mixins.less";
 @import "flexslider.less";
+
 .flexslider-container {
 		width: 100%;
-		
-	}
+}
 
 html,body{
 	.setWidth(100%,100%);
@@ -192,19 +192,25 @@ body{
     	display: block;
     	z-index:11;
 		position:relative;
-		
+		cursor: pointer;
 
     	#searchIcon{
     		color:#f1f0f2;
     		background:@compColorThree;
-    		padding: 0.21em 0.6em;
+    		padding: 0.2em 0.68em;
 			line-height: 1.8em;
-			font-size: 2.2em;
-			cursor: pointer;
+			font-size: 2.0em;
+			
     	}
 
 
     }//search
+
+    #search:hover{
+    	#searchIcon{
+    		background:@blueOne;
+    	}
+    }
 
 // Search Box
 // --------------------------------------------------
@@ -304,7 +310,6 @@ main {
 
 
     	h1,h3{
-			font-size:2.6em;
 			font-weight:300;
 			.ZeroMarPad();
 			line-height: 1.0em;
@@ -326,7 +331,6 @@ main {
     	}
 
     	h2{
-    		font-size:4.0em;
     		font-weight:900;
 			.ZeroMarPad();
     		.fadeInDown;
@@ -412,7 +416,6 @@ h4{
 		margin:0;
 		padding:0.6em 0;
 		text-align:center;
-		.fadeInDown;
 }
 
 // ABOUT PAGE
@@ -482,12 +485,23 @@ h4{
 				margin-top:10px;
 				margin-right:2.0em;
 				text-decoration:none;
-
+				.SimpleTrans;
 				i{
 					font-size:1.7em;
 					color:lighten(@text-color, 10%);
 				}
 			}//a
+
+			a:hover{
+				background:@blueOne;
+				color:#fff;
+				
+				i{
+				color:#fff;
+				}
+			}//a
+
+
 			}//li
 		}
 	}//abtHolder
@@ -501,7 +515,6 @@ h4{
 		background:@body-bg;
 		text-align:center;
 		padding:0.5em 1.24em;
-		.fadeInUp;
 		.tileBG{
 			
 		}
@@ -702,20 +715,7 @@ h4{
 				text-overflow: ellipsis;
 				margin:0;
 				
-				.postLinker{
-					display: none;
-					font-size: 2.5em;
-					font-weight: 300;
-					color:#fff;
-					background: @blueOne;
-					padding: 1.2em 1.5em;
-					i{
-						display: inline-block;
-						position: relative;
-						top: 4px;
-						left: 20px;
-					}
-				}
+
 
 				.posterHead{
 					font-size:1.6em;
@@ -741,23 +741,35 @@ h4{
 					font-weight: 400;
 					color: @text-color;
 					line-height: 2.0em;
+					max-height: 380px;
+					overflow: hidden;
+					text-overflow:ellipsis;
 				
 				}
+				.postLinker{
+					text-align: right;
+					padding:1.0em 0;
+					span{
+						display: inline-block;
+						font-size: 1.5em;
+						line-height: 1.5em;
+						font-weight: 500;
+						color:@body-bg-light;
+						i{
+							margin-left: 3px;
+						}
+					}
+				}
+
+
 		}//a
+				
+				
+
 
 		a:hover{
 			background: @blueOne;
-
-			.postLinker{
-				display:block;
-				position:absolute;
-				z-index:1;
-				opacity: 0.8;
-				height: 840px;
-				background-color:@blueOne;
-				.SimpleTrans;
-			}
-				
+	
 		}
 
 			
@@ -765,15 +777,20 @@ h4{
 
 	.Paginater{
 		text-align: center;
-		margin:1.0em 0 0;
-		background: @body-bg-light;
+		margin:1.5em 0 0;
 		text-decoration: none;
 		text-decoration: none;
-		color:@blueOne;
-		font-size: 1.5em;
-		font-weight: 400;		
-		
+		color:@text-color;
+		font-size: 1.2em;
+		font-weight: 500;
+		text-transform: uppercase;		
+		i{
+			margin:0 10px;
+			font-size: 1.0em;
+			font-weight: 300;
+		}
 		.paginateLink{	
+			background: @body-bg-light;
 			padding:1.5em 0;
 		}
 		.paginateLink:hover{
@@ -809,13 +826,15 @@ header{
 // --------------------------------------------------
 
 @media(max-width: 850px){
-
+	body{
+		font-size: 14px;
+	}
 		
 		header{
 			z-index: 1;
 			position: relative;
 			text-align: center;
-
+			overflow: hidden!important;
 			#theLogo{
 		    	text-align:center;
 		    	margin: 0 0 1.5em 0;
@@ -900,6 +919,15 @@ header{
 
 main{
 	margin:0em 0px 0 0px;//1.0em 20px 0 330px
+	
+	#HPBanner{
+    	h1,h3{
+			font-size:1.75em;
+    	}
+    	h2{
+	   		font-size:2.75em;
+    	}
+  	}//HPBanner
 
 	#circleIcons{
   		margin:4.0em auto 0;
@@ -915,9 +943,33 @@ main{
 	.abtHolder{
 		border-bottom:0.7em solid @body-bg;
 	}
+	.abtWrapper{
+		.row{
+			div:nth-child(odd){
+				.fadeInRight;
+			}
+			div:nth-child(even){
+				 .fadeInRight;
+			}
+		 }//row
+	}
+
 	.projectTile{
 		background:@body-bg-light;
 	}
+	.paginateWrapper{
+		.paginateLink{
+			margin-right: 10px;
+		
+		}
+	}
+	h4{
+		.fadeInLeft;
+	}
+	.blogWrapper,.workWrapper{
+		.fadeInRight;
+	}
+
 }//main
 
 #topPanel,.bimmerLines{
@@ -930,6 +982,9 @@ main{
 // --------------------------------------------------
 
 @media(min-width: 851px){
+	body{
+		font-size: 15px;
+	}
 	
 		header {
     		position: fixed;
@@ -1069,20 +1124,53 @@ main{
 }//header
 
 main{
+	#HPBanner{
+    	h1,h3{
+			font-size:2.6em;
+    	}
+    	h2{
+	   		font-size:4.0em;
+    	}
+  	}//HPBanner
+  	.abtWrapper{
+		.row{
+			div:nth-child(odd){
+				.fadeInLeft;
+			}
+			div:nth-child(even){
+				 .fadeInRight;
+			}
+		 }//row
+	}
+
 	.abtHolder{
 			border-right:0.5em solid @body-bg;
-		}
+	}
 	
 	.projectTile{
 		background:@body-bg-light url('../img/8x8.jpg') 0% repeat-y;
 	}
 	.workWrapper{
+		.fadeInUp;
 		ul{
 	 		li{
 				min-width: 225px;
 			}	
 		}
 	}
+	.blogWrapper{
+		.fadeInUp;
+	}
+	.paginateWrapper{
+		margin-right: 10px;
+		.Paginater{
+			background: @body-bg-light;
+		}
+	}
+	h4{
+		.fadeInDown;
+	}
+		
 }//main
 		
 
@@ -1090,9 +1178,16 @@ main{
 
 // DESKTOP HEIGHT MEDIA QUERY
 // --------------------------------------------------
-
+@media(max-height: 800px){
+	header{
+		.lineCap{
+				  width:1px;
+				  height:60%;
+				}
+	}
+}
     
-@media(max-height: 680px){
+@media(max-height: 638px){
 	header{
 		overflow-y: scroll;
     	overflow-x:hidden;
@@ -1104,3 +1199,47 @@ main{
 
 
 
+// Inspiration BMW Styles
+// --------------------------------------------------
+#insMsg{
+	display: none;
+}
+.insContainer{
+	background: #333;
+	opacity: 0.8;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	.setWidth(100%,100%);
+	z-index: 50;
+}
+.erb-image-wrapper{
+	position: absolute;
+	z-index: 999;
+	max-width:60%;
+    height:auto;
+    display:block;
+    margin:0 20%;
+    span{
+
+    	position: absolute;
+    	display: inline-block;
+		padding: 15px 0;
+		right: -4%;
+		font-weight: 700;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		i{
+			font-size: 0.88em;
+			margin-right: 5px;
+		}
+    }
+ 	img{
+		width:100% !important;
+    	height:100% !important;
+    	display:block;
+    	padding:3.0em;
+    	background:#fff;
+	}
+}
