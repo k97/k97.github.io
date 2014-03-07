@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic);
 /*!
- * k97 Weblog v5.0.0
+ * K97 Weblog v5.0.0
  * title: Core LESS file
  */
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
@@ -4448,6 +4448,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 /* FlexSlider Necessary Styles
 *********************************/
+.flexslider-container {
+  width: 100%;
+}
 .flexslider {
   margin: 0;
   padding: 0;
@@ -4632,9 +4635,6 @@ html[xmlns] .slides {
     right: 0;
   }
 }
-.flexslider-container {
-  width: 100%;
-}
 html,
 body {
   width: 100%;
@@ -4649,6 +4649,24 @@ body {
   padding: 0;
   overflow-y: scroll;
   font-size: 15px;
+}
+.k97links {
+  color: #2486ff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2486ff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.k97links:hover,
+.k97links:active {
+  background: #2486ff;
+  color: #edeef2;
+}
+.k97links:visited {
+  color: #4d9dff;
 }
 .loaderContainer {
   background: #333;
@@ -4738,6 +4756,7 @@ body {
   padding-right: 15px;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .bimmerLines {
   width: 100%;
@@ -5060,7 +5079,6 @@ main #HPBanner:after {
 }
 main #HPBanner h1,
 main #HPBanner h3 {
-  font-size: 2.6em;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -5097,7 +5115,6 @@ main #HPBanner .splitBtm {
   animation-name: fadeInDown;
 }
 main #HPBanner h2 {
-  font-size: 4.0em;
   font-weight: 900;
   margin: 0;
   padding: 0;
@@ -5209,12 +5226,6 @@ main h4 {
   margin: 0;
   padding: 0.6em 0;
   text-align: center;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
 }
 main .abtWrapper {
   background-color: #ced2dd;
@@ -5294,21 +5305,26 @@ main .abtWrapper .abtHolder ul li a {
   margin-top: 10px;
   margin-right: 2.0em;
   text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 main .abtWrapper .abtHolder ul li a i {
   font-size: 1.7em;
   color: #666666;
 }
+main .abtWrapper .abtHolder ul li a:hover {
+  background: #2486ff;
+  color: #fff;
+}
+main .abtWrapper .abtHolder ul li a:hover i {
+  color: #fff;
+}
 main .workWrapper {
   background: #ced2dd;
   text-align: center;
   padding: 0.5em 1.24em;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 main .workWrapper ul {
   list-style: none;
@@ -5537,55 +5553,43 @@ main .blogWrapper .poster a .posterContent {
   font-weight: 400;
   color: #4d4d4d;
   line-height: 2.0em;
+  max-height: 380px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main .blogWrapper .poster a .postLinker {
-  display: none;
-  background: #2486ff;
+  text-align: right;
+  padding: 1.0em 0;
 }
-main .blogWrapper .poster a .postLinker i {
+main .blogWrapper .poster a .postLinker span {
   display: inline-block;
-  position: relative;
-  top: 4px;
-  left: 20px;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: #edeef2;
 }
-main .blogWrapper .poster a .postLinkedTxt {
-  display: none;
+main .blogWrapper .poster a .postLinker span i {
+  margin-left: 3px;
 }
 main .blogWrapper .poster a:hover {
   background: #2486ff;
-  width: 100%;
-}
-main .blogWrapper .poster a:hover .postLinkedTxt {
-  display: block;
-  width: 100%;
-  text-align: center!important;
-  position: absolute;
-  color: #FFF;
-  z-index: 5;
-  font-size: 2.0em;
-  font-weight: 200;
-}
-main .blogWrapper .poster a:hover .postLinker {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.8;
-  background-color: #2486ff;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 main .blogWrapper .Paginater {
   text-align: center;
-  margin: 1.0em 0 0;
-  background: #edeef2;
+  margin: 1.5em 0 0;
   text-decoration: none;
-  color: #2486ff;
-  font-size: 1.5em;
-  font-weight: 400;
+  color: #4d4d4d;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .blogWrapper .Paginater i {
+  margin: 0 10px;
+  font-size: 1.0em;
+  font-weight: 300;
 }
 main .blogWrapper .Paginater .paginateLink {
+  background: #edeef2;
   padding: 1.5em 0;
 }
 main .blogWrapper .Paginater .paginateLink:hover {
@@ -5606,7 +5610,40 @@ header .subTitle {
   padding: 0.05em 0;
   margin: 0 0 3.0em 0;
 }
+@media (max-width: 260px) {
+  body main #HPBanner h1,
+  body main #HPBanner h3 {
+    font-size: 1.5em;
+  }
+  body main #HPBanner h2 {
+    font-size: 2.0em;
+  }
+  body nav ul li a {
+    width: 100%!important;
+  }
+}
+@media (max-width: 499px) {
+  body main #HPBanner h1,
+  body main #HPBanner h3 {
+    font-size: 1.8em;
+  }
+  body main #HPBanner h2 {
+    font-size: 2.2em;
+  }
+}
+@media (min-width: 500px) and (max-width: 850px) {
+  main #HPBanner h1,
+  main #HPBanner h3 {
+    font-size: 2.75em;
+  }
+  main #HPBanner h2 {
+    font-size: 3.75em;
+  }
+}
 @media (max-width: 850px) {
+  body {
+    font-size: 14px;
+  }
   header {
     z-index: 1;
     position: relative;
@@ -5705,8 +5742,44 @@ header .subTitle {
   main .abtHolder {
     border-bottom: 0.7em solid #ced2dd;
   }
+  main .abtWrapper .row div:nth-child(odd) {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+  main .abtWrapper .row div:nth-child(even) {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
   main .projectTile {
     background: #edeef2;
+  }
+  main .paginateWrapper .paginateLink {
+    margin-right: 10px;
+  }
+  main h4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+  main .blogWrapper,
+  main .workWrapper {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
   }
   #topPanel,
   .bimmerLines {
@@ -5714,6 +5787,9 @@ header .subTitle {
   }
 }
 @media (min-width: 851px) {
+  body {
+    font-size: 15px;
+  }
   header {
     position: fixed;
     top: 0;
@@ -5745,13 +5821,17 @@ header .subTitle {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    text-align: center;
     background: #20262a;
+    text-align: center;
+  }
+  header .footerLink a {
     font-size: 1.1em;
     padding: 0.05em 0;
     font-weight: 300;
+    text-decoration: none;
+    color: #e7e5e2;
   }
-  header .footerLink i {
+  header .footerLink a i {
     margin: 0 20px 0 0px;
   }
   header .lineCap {
@@ -5845,14 +5925,67 @@ header .subTitle {
     -o-transition: background 0.4s;
     transition: background 0.4s;
   }
+  main #HPBanner h1,
+  main #HPBanner h3 {
+    font-size: 2.6em;
+  }
+  main #HPBanner h2 {
+    font-size: 4.0em;
+  }
+  main .abtWrapper .row div:nth-child(odd) {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+  main .abtWrapper .row div:nth-child(even) {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
   main .abtHolder {
     border-right: 0.5em solid #ced2dd;
   }
   main .projectTile {
     background: #edeef2 url('../img/8x8.jpg') 0% repeat-y;
   }
+  main .workWrapper {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
   main .workWrapper ul li {
     min-width: 225px;
+  }
+  main .blogWrapper {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  main .paginateWrapper {
+    margin-right: 10px;
+  }
+  main .paginateWrapper .Paginater {
+    background: #edeef2;
+  }
+  main h4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
   }
 }
 @media (max-height: 800px) {

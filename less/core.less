@@ -1,5 +1,5 @@
 /*!
- * k97 Weblog v5.0.0
+ * K97 Weblog v5.0.0
  * title: Core LESS file
  */
 @import "normalize.less";
@@ -12,10 +12,6 @@
 @import "mixins.less";
 @import "flexslider.less";
 
-.flexslider-container {
-		width: 100%;
-}
-
 html,body{
 	.setWidth(100%,100%);
 }
@@ -27,7 +23,26 @@ body{
 	.ZeroMarPad;
 	overflow-y:scroll;
 	font-size:15px;
-  }
+}
+
+
+// Global Link Styles
+// --------------------------------------------------
+.k97links{
+	color:@blueOne;
+	text-decoration: none;
+	padding-bottom:2px;
+	border-bottom:1px solid @blueOne;
+	.SimpleTrans;
+}
+.k97links:hover,.k97links:active{
+	background: @blueOne;
+	color:@body-bg-light;
+}
+
+.k97links:visited{
+	color:lighten(@blueOne,8%);
+}
 
 
 // Loading Styles
@@ -112,7 +127,7 @@ body{
 	
 /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  //-moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 
 }
 
@@ -125,6 +140,7 @@ body{
   	opacity:0.9;
 	.clearfix();
 }
+
 // BG Styles
 // --------------------------------------------------
 .show{
@@ -698,6 +714,8 @@ h4{
 
 	}//projectWrapper
 
+// BLOG PAGE
+// --------------------------------------------------
 	.blogWrapper{
 		padding:0.5em 1.0em 0 2.0em;
 		
@@ -822,9 +840,71 @@ header{
 
 
 
+// SMALL SCREEN MOBILE
+// --------------------------------------------------
+@media(max-width: 260px){
+
+	body{
+		main{
+		
+			#HPBanner{
+    			h1,h3{
+					font-size:1.5em;
+    			}
+    			h2{
+	   				font-size:2.0em;
+    			}	
+  		}//HPBanner
+  	}//main
+
+		nav{
+			ul{
+				li{
+			    	a{
+	    				width: 100%!important;
+	    			}//a
+	    		}//li
+			}
+		}//nav
+	}
+}
+// MEDIUM SCREEN MOBILE
+// --------------------------------------------------
+@media(max-width: 499px){
+
+	body{
+		main{
+		
+			#HPBanner{
+    			h1,h3{
+					font-size:1.8em;
+    			}
+    			h2{
+	   				font-size:2.2em;
+    			}	
+  		}//HPBanner
+  	}//main
+
+		
+	}
+}
+
 // MOBILE & TAB MEDIA QUERY
 // --------------------------------------------------
+@media(min-width: 500px) and (max-width: 850px){
 
+	main{
+		
+			#HPBanner{
+    			h1,h3{
+					font-size:2.75em;
+    			}
+    			h2{
+	   				font-size:3.75em;
+    			}	
+  		}//HPBanner
+  	}//main
+}
 @media(max-width: 850px){
 	body{
 		font-size: 14px;
@@ -919,15 +999,7 @@ header{
 
 main{
 	margin:0em 0px 0 0px;//1.0em 20px 0 330px
-	
-	#HPBanner{
-    	h1,h3{
-			font-size:1.75em;
-    	}
-    	h2{
-	   		font-size:2.75em;
-    	}
-  	}//HPBanner
+
 
 	#circleIcons{
   		margin:4.0em auto 0;
@@ -1017,15 +1089,21 @@ main{
 		    	width:100%;
 		    	position: absolute;
 		    	bottom: 0px;
-		    	text-align: center;
 		    	background:@navBgDark;
-		    	font-size: 1.1em;
-		    	padding:0.05em 0;
-		    	font-weight:300;
-		    	i{
-		    		margin:0 20px 0 0px;
-		    	}
-		    }//footerLink
+		    	text-align: center;
+		    	a{
+		    		i{
+		    			margin:0 20px 0 0px;
+		    		}
+		    		
+			    	font-size: 1.1em;
+			    	padding:0.05em 0;
+			    	font-weight:300;
+			    	text-decoration: none;
+			    	color:@navColor;
+		    	}//a
+			}//footerLink
+
 
 		    .lineCap{
 				  width:1px;
