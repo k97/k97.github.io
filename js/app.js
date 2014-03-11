@@ -29,11 +29,11 @@ $routeProvider
             templateUrl: 'blog/blog.html',
             controller: "BlogCtrl"
         })
-    .when('/cv', 
-        {   
-            templateUrl: 'template/download.html',
-            controller: "CvCtrl"
-        })
+    // .when('/cv', 
+    //     {   
+    //         templateUrl: 'template/download.html',
+    //         controller: "CvCtrl"
+    //     })
     .otherwise( {redirectTo: '/home'});
 
 }).factory('PageBG', function($rootScope){
@@ -113,8 +113,8 @@ function BlogCtrl($scope, PageBG) {
 }
 
 
-function CvCtrl($scope, PageBG) {
-    PageBG.setBg("hide");
-}
+// function CvCtrl($scope, PageBG) {
+//     PageBG.setBg("hide");
+// }
 
 

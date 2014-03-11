@@ -26,31 +26,24 @@
     },
     {
         "id": 1,
-        "prID": "SPM",
-        "prColor": "#F29200",
-        "prImgThumb": "SPM.png",
-        "prImgThumbInv": "SPM-w.png",
+        "prID": "MAapp",
+        "prColor": "#009A76",
+        "prImgThumb": "MA.png",
+        "prImgThumbInv": "MA-w.png",
         "prImgs": [
-            "2_spm/spm_1.jpg",
-            "2_spm/spm_2.jpg",
-            "2_spm/spm_3.jpg",
-            "2_spm/spm_4.jpg"
+            "3_ma/ma_1.jpg",
+            "3_ma/ma_2.jpg",
+            "3_ma/ma_3.jpg"
         ],
-        "prTitle": "SPM Charitable Trust",
-        "prDesc": "SPM Charitable project was similar to ERM project with the only difference that everything had to built from scratch. I had to do some branding work which included logo creation, print media and a website. The logo and the brand colors were chosen with client's advise and alike ERM we planned  keep the costs down. There is brief blog post which I published when I completed this project.",
-        "prRole": "Branding & Web Design & Development",
+        "prTitle": "Mobile Accountant",
+        "prDesc": "Mobile Accountant was one of the app that I designed when I was working at Karya. This was my debut into mobile application design which gave me a broader prespective into mobile app design and development. I went on further with designing & developing apps at Karya but won't be able to list them here due to NDA constraints. Also, I remember publishing a blog post about designing applications interfaces for Android platform at Medium.",
+        "prRole": "UI Designer",
         "prFunctions": [
-            "Branding",
-            "Brand Strategy",
+            "Prototyping",
             "Concept design",
+            "User Interface design",
             "User Experience (UX)",
-            "Development",
-            "XHTML 1.0 Transitional",
-            "Cross Browser Testing",
-            "Digital Support",
-            "Javascript Animation",
-            "Information Architecture (IA)",
-            "Print Media"
+            "Andriod & iOS"
         ]
     },
     {
@@ -80,28 +73,6 @@
     },
     {
         "id": 3,
-        "prID": "MAapp",
-        "prColor": "#009A76",
-        "prImgThumb": "MA.png",
-        "prImgThumbInv": "MA-w.png",
-        "prImgs": [
-            "3_ma/ma_1.jpg",
-            "3_ma/ma_2.jpg",
-            "3_ma/ma_3.jpg"
-        ],
-        "prTitle": "Mobile Accountant",
-        "prDesc": "Mobile Accountant was one of the app that I designed when I was working at Karya. This was my debut into mobile application design which gave me a broader prespective into mobile app design and development. I went on further with designing & developing apps at Karya but won't be able to list them here due to NDA constraints. Also, I remember publishing a blog post about designing applications interfaces for Android platform at Medium.",
-        "prRole": "UI Designer",
-        "prFunctions": [
-            "Prototyping",
-            "Concept design",
-            "User Interface design",
-            "User Experience (UX)",
-            "Andriod & iOS"
-        ]
-    },
-    {
-        "id": 4,
         "prID": "SON",
         "prColor": "#DB2822",
         "prImgThumb": "SON.png",
@@ -124,6 +95,35 @@
             "JS/jQuery",
             "Information Architecture (IA)",
             "Digital Support"
+        ]
+    },
+    {
+        "id": 4,
+        "prID": "SPM",
+        "prColor": "#F29200",
+        "prImgThumb": "SPM.png",
+        "prImgThumbInv": "SPM-w.png",
+        "prImgs": [
+            "2_spm/spm_1.jpg",
+            "2_spm/spm_2.jpg",
+            "2_spm/spm_3.jpg",
+            "2_spm/spm_4.jpg"
+        ],
+        "prTitle": "SPM Charitable Trust",
+        "prDesc": "SPM Charitable project was similar to ERM project with the only difference that everything had to built from scratch. I had to do some branding work which included logo creation, print media and a website. The logo and the brand colors were chosen with client's advise and alike ERM we planned  keep the costs down. There is brief blog post which I published when I completed this project.",
+        "prRole": "Branding & Web Design & Development",
+        "prFunctions": [
+            "Branding",
+            "Brand Strategy",
+            "Concept design",
+            "User Experience (UX)",
+            "Development",
+            "XHTML 1.0 Transitional",
+            "Cross Browser Testing",
+            "Digital Support",
+            "Javascript Animation",
+            "Information Architecture (IA)",
+            "Print Media"
         ]
     },
     {

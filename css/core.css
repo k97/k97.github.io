@@ -5229,7 +5229,7 @@ main h4 {
 }
 main .abtWrapper {
   background-color: #ced2dd;
-  padding: 0em 1.3em 10%;
+  padding: 0 1.3em;
   overflow: hidden;
 }
 main .abtWrapper .row {
@@ -5319,6 +5319,69 @@ main .abtWrapper .abtHolder ul li a:hover {
   color: #fff;
 }
 main .abtWrapper .abtHolder ul li a:hover i {
+  color: #fff;
+}
+main .staticWrapper {
+  background-color: #ced2dd;
+  padding: 0em 0.8em 0%;
+  overflow: hidden;
+}
+main .staticWrapper .row {
+  background: #edeef2;
+  margin: 0;
+}
+main .staticWrapper .statContent {
+  background: #edeef2;
+  text-align: left;
+  padding: 2.0em 1.5em 1.5em;
+}
+main .staticWrapper .statContent h3 {
+  font-size: 1.6em;
+  color: #434a5c;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.8em;
+  padding: 0;
+  margin: 0 0 0.7em;
+}
+main .staticWrapper .statContent p {
+  font-size: 1.10em;
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 2.0em;
+}
+main .staticWrapper .statContent ul {
+  list-style: none;
+  margin: 2.0em auto 0.8em;
+}
+main .staticWrapper .statContent ul li {
+  display: inline-block;
+}
+main .staticWrapper .statContent ul li a {
+  float: left;
+  background: #fff;
+  padding: 2.5em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 2.0em;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+main .staticWrapper .statContent ul li a i {
+  font-size: 1.7em;
+  color: #666666;
+}
+main .staticWrapper .statContent ul li a:hover {
+  background: #2486ff;
+  color: #fff;
+}
+main .staticWrapper .statContent ul li a:hover i {
   color: #fff;
 }
 main .workWrapper {
@@ -5513,32 +5576,34 @@ main .projectWrapper .projectDesc p {
   line-height: 2.0em;
 }
 main .blogWrapper {
-  padding: 0.5em 1.0em 0 2.0em;
+  padding: 0.5em 1.0em 0 1.0em;
+}
+main .blogWrapper .postContainer {
+  padding-left: 1.0em;
 }
 main .blogWrapper .poster {
-  margin: 0;
   padding: 0;
-}
-main .blogWrapper .poster a {
   background: #edeef2;
   display: block;
-  text-decoration: none;
   padding: 2.5em 2.5em;
   border-right: 0.8em solid #ced2dd;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
 }
-main .blogWrapper .poster a .posterHead {
+main .blogWrapper .poster h1 {
   font-size: 1.6em;
-  color: #434a5c;
   font-weight: 900;
-  text-transform: uppercase;
   line-height: 1.8em;
   padding: 0;
   margin: 0 0 0.7em;
+  text-transform: uppercase;
 }
-main .blogWrapper .poster a .posterDate {
+main .blogWrapper .poster h1 a {
+  color: #434a5c;
+  text-decoration: none;
+}
+main .blogWrapper .poster .posterDate {
   display: block;
   margin: 0 0 0.7em;
   font-size: 0.9em;
@@ -5546,55 +5611,174 @@ main .blogWrapper .poster a .posterDate {
   color: #999999;
   line-height: 2.0em;
 }
-main .blogWrapper .poster a .posterContent {
-  display: block;
+main .blogWrapper .poster .posterContent {
   margin: 0 0 0.7em;
   font-size: 1.10em;
   font-weight: 400;
   color: #4d4d4d;
   line-height: 2.0em;
-  max-height: 380px;
+  max-height: 480px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .blogWrapper .poster a .postLinker {
-  text-align: right;
-  padding: 1.0em 0;
+main .blogWrapper .poster .posterContent a {
+  color: #2486ff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2486ff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-main .blogWrapper .poster a .postLinker span {
+main .blogWrapper .poster .posterContent a:hover,
+main .blogWrapper .poster .posterContent a:active {
+  background: #2486ff;
+  color: #edeef2;
+}
+main .blogWrapper .poster .posterContent a:visited {
+  color: #4d9dff;
+}
+main .blogWrapper .poster .postReadMore {
+  text-align: right;
+  padding: 1.0em 0 0;
+}
+main .blogWrapper .poster .postReadMore span {
   display: inline-block;
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: 500;
   color: #edeef2;
 }
-main .blogWrapper .poster a .postLinker span i {
+main .blogWrapper .poster .postReadMore span i {
   margin-left: 3px;
 }
-main .blogWrapper .poster a:hover {
+main .blogWrapper .poster:hover,
+main .blogWrapper .poster:active {
   background: #2486ff;
+  cursor: pointer;
+}
+main .blogWrapper .poster:hover a,
+main .blogWrapper .poster:active a {
+  color: #edeef2;
 }
 main .blogWrapper .Paginater {
-  text-align: center;
-  margin: 1.5em 0 0;
-  text-decoration: none;
-  color: #4d4d4d;
+  margin-left: -15px;
   font-size: 1.2em;
-  font-weight: 500;
+  text-align: center;
   text-transform: uppercase;
 }
-main .blogWrapper .Paginater i {
+main .blogWrapper .Paginater span {
+  margin: 1.5em 0 0;
+  padding: 1.5em 0;
+  text-decoration: none;
+  background: #edeef2;
+  color: #cccccc;
+}
+main .blogWrapper .Paginater a {
+  display: block;
+  cursor: pointer;
+  margin: 1.5em 0 0;
+  padding: 1.5em 0;
+  text-decoration: none;
+  background: #edeef2;
+  color: #4d4d4d;
+  font-weight: 500;
+}
+main .blogWrapper .Paginater a i {
   margin: 0 10px;
   font-size: 1.0em;
   font-weight: 300;
 }
-main .blogWrapper .Paginater .paginateLink {
-  background: #edeef2;
-  padding: 1.5em 0;
+main .blogWrapper .Paginater .older,
+main .blogWrapper .Paginater .newer {
+  float: left;
+  width: 50%;
 }
-main .blogWrapper .Paginater .paginateLink:hover {
+main .blogWrapper .Paginater a:hover {
+  display: block;
   background: #2486ff;
   color: #edeef2;
+}
+main .blogWrapper .BPHeader {
+  font-weight: bolder;
+  color: #4d4d4d;
+  padding-left: 0.4em;
+  text-align: left;
+}
+main .blogWrapper .BPContent {
+  background: #edeef2;
+  text-align: left;
+  padding: 2.0em 1.5em 1.5em;
+  font-size: 1.10em;
+  font-weight: 400;
+  color: #4d4d4d;
+  line-height: 2.0em;
+}
+main .blogWrapper .BPContent a {
+  color: #2486ff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2486ff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+main .blogWrapper .BPContent a:hover,
+main .blogWrapper .BPContent a:active {
+  background: #2486ff;
+  color: #edeef2;
+}
+main .blogWrapper .BPContent a:visited {
+  color: #4d9dff;
+}
+main .blogWrapper .BPContent address {
+  font-size: 1.0em;
+  color: #8c8c8c;
+  font-weight: 400;
+  width: 80%;
+  margin: 2.0em auto 1.0em;
+  display: block;
+  padding: 2.0em 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  line-height: 2.0em;
+  font-style: normal;
+}
+main .blogWrapper .BPContent address .twitterPic {
+  width: 20%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+main .blogWrapper .BPContent address .authorInfo {
+  font-weight: 700;
+  display: block;
+  font-style: italic;
+}
+main .blogWrapper .BPContent address .twitterBio {
+  color: #b3b3b3;
+  font-weight: 300;
+  display: inline-block;
+  font-size: 1.0em;
+  font-style: italic;
+}
+main .blogWrapper .BPContent address .tweetBtn {
+  font-family: Helvetica,Arial, sans;
+  margin: 1.0em 0;
+}
+main .blogWrapper .BPContent address p {
+  width: 75%;
+  float: right;
+  display: block;
+}
+main .blogWrapper .disqusSection {
+  background: #edeef2;
+  display: block;
+  padding: 2.5em;
+  margin: 0.83em 0 2.5em;
 }
 header {
   background: #2b3238;
@@ -5780,6 +5964,16 @@ header .subTitle {
     animation-fill-mode: both;
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
+  }
+  main .blogWrapper {
+    padding: 0.5em 1.0em 0 1.0em;
+  }
+  main .blogWrapper .postContainer {
+    padding-left: 0.8em;
+  }
+  main .blogWrapper .poster {
+    border-bottom: 0.8em solid #ced2dd;
+    margin: 0 -12px;
   }
   #topPanel,
   .bimmerLines {
