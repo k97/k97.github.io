@@ -4665,8 +4665,19 @@ body {
   background: #2486ff;
   color: #edeef2;
 }
-.k97links:visited {
-  color: #4d9dff;
+header {
+  background: #2b3238;
+  color: #e7e5e2;
+}
+header .subTitle {
+  width: 100%;
+  text-align: center;
+  background: #20262a;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.05em 0;
+  margin: 0 0 3.0em 0;
 }
 .loaderContainer {
   background: #333;
@@ -5636,9 +5647,6 @@ main .blogWrapper .poster .posterContent a:active {
   background: #2486ff;
   color: #edeef2;
 }
-main .blogWrapper .poster .posterContent a:visited {
-  color: #4d9dff;
-}
 main .blogWrapper .poster .postReadMore {
   text-align: right;
   padding: 1.0em 0 0;
@@ -5701,7 +5709,7 @@ main .blogWrapper .Paginater a:hover {
   color: #edeef2;
 }
 main .blogWrapper .BPHeader {
-  font-weight: bolder;
+  font-weight: 700;
   color: #4d4d4d;
   padding-left: 0.4em;
   text-align: left;
@@ -5729,9 +5737,6 @@ main .blogWrapper .BPContent a:hover,
 main .blogWrapper .BPContent a:active {
   background: #2486ff;
   color: #edeef2;
-}
-main .blogWrapper .BPContent a:visited {
-  color: #4d9dff;
 }
 main .blogWrapper .BPContent address {
   font-size: 1.0em;
@@ -5780,19 +5785,29 @@ main .blogWrapper .disqusSection {
   padding: 2.5em;
   margin: 0.83em 0 2.5em;
 }
-header {
-  background: #2b3238;
-  color: #e7e5e2;
+main .blogWrapper #BPOtherPost h2 {
+  font-weight: 900;
 }
-header .subTitle {
-  width: 100%;
-  text-align: center;
-  background: #20262a;
-  font-size: 1.2em;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 0.05em 0;
-  margin: 0 0 3.0em 0;
+main .blogWrapper #BPOtherPost div {
+  margin: 0 0 0.3em;
+}
+main .blogWrapper #BPOtherPost div a {
+  color: #4d4d4d;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1.15em;
+}
+main .blogWrapper #BPOtherPost div a small {
+  font-size: 0.8em;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 5px;
+}
+main .blogWrapper #BPOtherPost div a:hover {
+  background-color: #edeef2;
+  color: #2486ff;
+  border-bottom: 1px solid #2486ff;
 }
 @media (max-width: 260px) {
   body main #HPBanner h1,
@@ -5911,7 +5926,7 @@ header .subTitle {
     color: #edeef2;
   }
   main {
-    margin: 0em 0px 0 0px;
+    margin: 0;
   }
   main #circleIcons {
     margin: 4.0em auto 0;
@@ -5974,6 +5989,22 @@ header .subTitle {
   main .blogWrapper .poster {
     border-bottom: 0.8em solid #ced2dd;
     margin: 0 -12px;
+  }
+  main .blogWrapper .BPContent address {
+    text-align: center;
+  }
+  main .blogWrapper .BPContent address .twitterPic {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  main .blogWrapper .BPContent address .twitterPic img {
+    max-width: 25%;
+    max-height: 25%;
+  }
+  main .blogWrapper .BPContent address p {
+    width: 100%;
+    float: none;
   }
   #topPanel,
   .bimmerLines {
@@ -6047,10 +6078,10 @@ header .subTitle {
     animation-name: fadeIn;
   }
   header nav ul {
-    list-style: none;
     z-index: 9;
   }
   header nav ul li {
+    list-style: none;
     margin: 1.5em 0em;
   }
   header nav ul li a {
@@ -6182,10 +6213,15 @@ header .subTitle {
     animation-name: fadeInDown;
   }
 }
+@media (min-width: 851px) and (max-width: 1275px) {
+  main .blogWrapper .BPContent address p {
+    width: 60%;
+  }
+}
 @media (max-height: 800px) {
   header .lineCap {
     width: 1px;
-    height: 60%;
+    height: 50%;
   }
 }
 @media (max-height: 638px) {

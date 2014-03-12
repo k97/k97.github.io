@@ -40,10 +40,25 @@ body{
 	color:@body-bg-light;
 }
 
-.k97links:visited{
-	color:lighten(@blueOne,8%);
-}
 
+
+//Header
+// --------------------------------------------------
+header{
+		background:@navBg;
+   		color:@navColor;
+		.subTitle{
+			width:100%;
+			text-align: center;
+			background:@navBgDark;
+			font-size: 1.2em;
+			font-weight:300;
+			text-transform: uppercase;
+			padding:0.05em 0;
+			margin: 0 0 3.0em 0;
+		}//subTitle
+
+}//header
 
 // Loading Styles
 // --------------------------------------------------
@@ -166,13 +181,10 @@ body{
 }
 
 #output{
-
 	canvas{
 		.setWidth(100%,100%);
 		bottom:0%;
 		position:fixed;
-		
-
 	}
 }
 .vignette {
@@ -360,8 +372,7 @@ main {
   		margin:20.0em auto 0;
   		.clearfix();
   		.fadeInUp;
-    	
-  			
+    		
   			.HPCircle:after {
 			    content: "";
 			    display: block;
@@ -400,9 +411,6 @@ main {
 	  		}
 	  	
 	  	}
-	  	
-
-
 	  	.webIcon:after{
 	  		.verticalGradient(#d11a30,#c71429);
 	  		
@@ -841,12 +849,7 @@ h4{
 						background: @blueOne;
 						color:@body-bg-light;
 					}
-					a:visited{
-						color:lighten(@blueOne,8%);
-					}
-
-
-
+					
 					margin:0 0 0.7em;
 					font-size: 1.10em;
 					font-weight: 400;
@@ -931,7 +934,7 @@ h4{
 	}//Paginater
 
 	.BPHeader{
-		font-weight: bolder;
+		font-weight:700;
 		color:@text-color;
 		padding-left: 0.4em;
 		text-align: left;
@@ -947,9 +950,6 @@ h4{
 			a:hover,a:active{
 				background: @blueOne;
 				color:@body-bg-light;
-			}
-			a:visited{
-				color:lighten(@blueOne,8%);
 			}
 
 			background:@body-bg-light;
@@ -1008,34 +1008,45 @@ h4{
 
 
 	}//BPContent
+
 	.disqusSection{
 			background:@body-bg-light;
 			display: block;
 			padding:2.5em;
 			margin: 0.83em 0 2.5em;
+	}//disqusSection
+	
+	#BPOtherPost{
+		h2{
+			font-weight: 900;
+		}
+		div{
+			margin:0 0 0.3em;
+			a{
+				color:@text-color;	
+				text-decoration: none;
+				border:none;
+				font-weight: 600;
+				font-size:1.15em; 
+				small{
+					font-size:0.8em; 
+					font-weight: 400;
+					display: inline-block;
+					margin-left: 5px;
+				}
 			}
+			a:hover{
+				background-color: @body-bg-light;
+				color:@blueOne;
+				border-bottom:1px solid @blueOne;
+			}
+		}
+
+	}//BPOtherPost
 
 	}//blogWrapper
 
 }//main
-
-header{
-		background:@navBg;
-   		color:@navColor;
-		.subTitle{
-			width:100%;
-			text-align: center;
-			background:@navBgDark;
-			font-size: 1.2em;
-			font-weight:300;
-			text-transform: uppercase;
-			padding:0.05em 0;
-			margin: 0 0 3.0em 0;
-		}//subTitle
-
-}//header
-
-
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1107,6 +1118,7 @@ header{
   		}//HPBanner
   	}//main
 }
+
 @media(max-width: 850px){
 	body{
 		font-size: 14px;
@@ -1200,11 +1212,11 @@ header{
 
 
 main{
-	margin:0em 0px 0 0px;//1.0em 20px 0 330px
-
+	margin:0;//1.0em 20px 0 330px
 
 	#circleIcons{
   		margin:4.0em auto 0;
+
   		.HPCircle {
 			margin: 2.0em auto;
   		}
@@ -1252,12 +1264,36 @@ main{
 		.poster{
 			border-bottom:0.8em solid @body-bg;
 			margin: 0 -12px;
-			
-				
+		}//poster
 
+
+	.BPContent{
+			address{
+				text-align: center;
+				.twitterPic{
+					width: 100%;
+					float:none;
+					
+					text-align: center;
+					img{
+						max-width: 25%;
+						max-height: 25%;
+
+					}
+					
+				}
 			
-	}//poster
-}
+				p{
+					width: 100%;
+					float:none;
+			
+				}
+				
+			}//address
+	}//BPContent
+
+}//blogWrapper
+
 
 
 }//main
@@ -1265,6 +1301,7 @@ main{
 #topPanel,.bimmerLines{
 	display: none;
 }
+
 
 }
 
@@ -1339,12 +1376,9 @@ main{
     	.fadeIn;
 		
     	ul{
-    		list-style:none;
     		z-index:9;
-
-
     		li{
-
+    			list-style: none;
 	    		margin:1.5em 0em;
 
 	    		a{
@@ -1472,17 +1506,35 @@ main{
 
 }
 
+// DESKTOP TWEET BIO FIX
+// --------------------------------------------------
+@media(min-width: 851px) and (max-width: 1275px){
+	main{
+		.blogWrapper{
+			.BPContent{
+				address{
+					p{
+						width: 60%;
+					}
+				}//address
+			}//BPContent
+		}//blogWrapper
+		
+	}//main
+}
+
+
 // DESKTOP HEIGHT MEDIA QUERY
 // --------------------------------------------------
 @media(max-height: 800px){
 	header{
 		.lineCap{
-				  width:1px;
-				  height:60%;
+				  .setWidth(1px,50%);
 				}
 	}
 }
     
+
 @media(max-height: 638px){
 	header{
 		overflow-y: scroll;
