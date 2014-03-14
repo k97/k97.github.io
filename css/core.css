@@ -5817,6 +5817,10 @@ main .blogWrapper #BPOtherPost div a:hover {
   body main #HPBanner h2 {
     font-size: 2.0em;
   }
+  body main .blogWrapper .BPContent img {
+    width: 100%;
+    height: 100%;
+  }
   body nav ul li a {
     width: 100%!important;
   }
@@ -5828,6 +5832,10 @@ main .blogWrapper #BPOtherPost div a:hover {
   }
   body main #HPBanner h2 {
     font-size: 2.2em;
+  }
+  body main .blogWrapper .BPContent img {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (min-width: 500px) and (max-width: 850px) {
@@ -6005,6 +6013,10 @@ main .blogWrapper #BPOtherPost div a:hover {
   main .blogWrapper .BPContent address p {
     width: 100%;
     float: none;
+  }
+  main .blogWrapper .BPContent address img {
+    width: 100%;
+    height: 100%;
   }
   #topPanel,
   .bimmerLines {
