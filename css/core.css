@@ -5817,7 +5817,7 @@ main .blogWrapper #BPOtherPost div a:hover {
   body main #HPBanner h2 {
     font-size: 2.0em;
   }
-  body main .blogWrapper .BPContent img {
+  body main .blogWrapper .BPContent p img {
     width: 100%;
     height: 100%;
   }
@@ -5833,7 +5833,7 @@ main .blogWrapper #BPOtherPost div a:hover {
   body main #HPBanner h2 {
     font-size: 2.2em;
   }
-  body main .blogWrapper .BPContent img {
+  body main .blogWrapper .BPContent p img {
     width: 100%;
     height: 100%;
   }
@@ -6014,7 +6014,7 @@ main .blogWrapper #BPOtherPost div a:hover {
     width: 100%;
     float: none;
   }
-  main .blogWrapper .BPContent address img {
+  main .blogWrapper .BPContent address p img {
     width: 100%;
     height: 100%;
   }
