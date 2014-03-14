@@ -6235,9 +6235,19 @@ main .blogWrapper #BPOtherPost div a:hover {
   }
 }
 @media (max-height: 800px) {
+  header #theLogo {
+    margin: 0 0 2.5em 0;
+  }
+  header .subTitle {
+    margin: 0 0 2.0em 0;
+  }
   header .lineCap {
     width: 1px;
-    height: 50%;
+    height: 60%;
+  }
+  header nav ul li {
+    list-style: none;
+    margin: 1.5em 0em;
   }
 }
 @media (max-height: 638px) {
