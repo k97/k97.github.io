@@ -5846,6 +5846,10 @@ main .blogWrapper #BPOtherPost div a:hover {
   main #HPBanner h2 {
     font-size: 3.75em;
   }
+  main .blogWrapper .BPContent p img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 850px) {
   body {
