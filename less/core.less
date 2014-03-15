@@ -1057,7 +1057,7 @@ h4{
 
 	}//BPContent
 	#myMusic{
-		background: url('../img/fivecmpersec.jpg') repeat-x center;
+		background: url('../fivecmpersec.jpg') repeat-x center;
 		min-height: 400px;
 		color:#fff;
 		margin: 0.83em 0 2.5em;
@@ -1704,8 +1704,59 @@ main{
 		
 }//main
 		
+	// --------------------------------------------------
+	// DESKTOP HEIGHT MEDIA QUERY
+	// --------------------------------------------------
+	@media(max-height: 800px){
+		header{
+			#theLogo{
+			    margin: 0 0 2.5em 0;
+			}//theLogo
+		
+			.subTitle{
+				margin: 0 0 2.0em 0;
+			}//subTitle
 
-}
+			.lineCap{
+			  .setWidth(1px,60%);
+			}
+			nav{
+	    		ul{
+	    			li{
+	    				list-style: none;
+		    			margin:1.25em 0em;
+		    		}
+		    	}
+		    }
+		}
+	}
+    
+
+	@media(max-height: 638px){
+		header{
+			overflow-y: scroll;
+	    	overflow-x:hidden;
+	    	nav{
+	    		margin-bottom: 1.0em;
+	    	}
+	    	.lineCap{
+			  .setWidth(1px,61%);
+			}
+	    	.footerLink{
+	  			position: relative!important;
+	  			margin-top: 1.5em;
+	  			padding: 0.05em 0;
+	  		}
+		}//header
+	}
+	// --------------------------------------------------
+	// DESKTOP HEIGHT MEDIA QUERY
+	// --------------------------------------------------
+
+	
+}// DESKTOP MEDIA QUERY
+
+	
 
 // DESKTOP TWEET BIO FIX
 // --------------------------------------------------
@@ -1748,53 +1799,9 @@ main{
 		}//blogWrapper
 		
 	}//main
+
 }
 
-
-// DESKTOP HEIGHT MEDIA QUERY
-// --------------------------------------------------
-@media(max-height: 800px){
-	header{
-		#theLogo{
-		    margin: 0 0 2.5em 0;
-		}//theLogo
-	
-		.subTitle{
-			margin: 0 0 2.0em 0;
-		}//subTitle
-
-		.lineCap{
-		  .setWidth(1px,60%);
-		}
-		nav{
-    		ul{
-    			li{
-    				list-style: none;
-	    			margin:1.25em 0em;
-	    		}
-	    	}
-	    }
-	}
-}
-    
-
-@media(max-height: 638px){
-	header{
-		overflow-y: scroll;
-    	overflow-x:hidden;
-    	nav{
-    		margin-bottom: 1.0em;
-    	}
-    	.lineCap{
-		  .setWidth(1px,61%);
-		}
-    	.footerLink{
-  			position: relative!important;
-  			margin-top: 1.5em;
-  			padding: 0.05em 0;
-  		}
-	}//header
-}
 
 
 
