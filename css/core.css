@@ -5615,6 +5615,7 @@ main .blogWrapper {
 }
 main .blogWrapper .postContainer {
   padding-left: 1.0em;
+  margin: 0;
 }
 main .blogWrapper .poster {
   padding: 0;
@@ -5695,7 +5696,6 @@ main .blogWrapper .poster:active a {
   color: #edeef2;
 }
 main .blogWrapper .Paginater {
-  margin-left: -15px;
   font-size: 1.2em;
   text-align: center;
   text-transform: uppercase;
