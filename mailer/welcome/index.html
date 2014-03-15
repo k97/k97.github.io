@@ -13,7 +13,7 @@
 		.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */  
 		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
 		/* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */ 
-		#backgroundTable {margin:30px auto!important; padding:0; width:550px!important; line-height: 100% !important;
+		#backgroundTable {margin:0px auto!important; padding:0; width:550px!important; line-height: 100% !important;
 			background-color: #edeef2;}
 		/* End reset */
 
@@ -64,7 +64,22 @@
 			width:484px!important;
 			height:154px!important;			
 		}
-
+		#txtMessage {margin:0px auto!important; 
+			padding:0; width:550px!important; 
+			line-height: 100% !important;
+			background-color: #ced2dd;
+		}
+			#txtMessage td{
+			font-weight:400;
+			font-size:16px;
+			line-height: 35px;
+			text-align: center;
+			margin-top:5px;
+			margin-bottom: 5px;
+		}
+		#txtMessage td a{
+			color: #2486ff!important;
+		}
 		#mailContent p{
 			font-weight:400;
 			font-size:16px;
@@ -176,11 +191,16 @@
 	<![endif]-->
 </head>
 <body>
-<div id="">To view a web version of this message, <a href="http://k97.in/mailer/index.html">click here</a></div>
+<table cellpadding="0" cellspacing="0" border="0" id="txtMessage">
+	<tr>
+		<td colspan="2" valign="top">To view a web version of this message, <a href="http://k97.in/mailer/welcome/index.html">click here</a>
+		</td>
+	</tr>
+	</table>
 <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
 	<tr>
 		<td colspan="2" valign="top"><a href="http://k97.in/">
-		<img class="image_fix" id="kHeader" src="../img/mail_header.png" alt="www.k97.in" title="www.k97.in" width="x" height="x" /></a>
+		<img class="image_fix" id="kHeader" src="http://k97.in/mailer/welcome/mail_header.png" alt="www.k97.in" title="www.k97.in" width="x" height="x" /></a>
 		</td>
 	</tr>
 	<tr>
