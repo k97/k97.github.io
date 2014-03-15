@@ -6022,7 +6022,7 @@ main .blogWrapper #BPOtherPost div a:hover {
     width: 100%;
     height: 100%;
   }
-  main .blogWrapper .BPContent address p h4 {
+  main .blogWrapper .BPContent address h4 {
     font-weight: normal;
     font-size: inherit;
     color: inherit;
