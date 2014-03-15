@@ -5762,6 +5762,9 @@ main .blogWrapper .BPContent a:active {
   background: #2486ff;
   color: #edeef2;
 }
+main .blogWrapper .BPContent p img {
+  max-width: 100%;
+}
 main .blogWrapper .BPContent h3 {
   margin: 2.0em 0 0 0;
   padding: 0;
