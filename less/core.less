@@ -959,7 +959,13 @@ h4{
 			font-weight: 400;
 			color: @text-color;
 			line-height: 2.0em;
-
+			h4{
+				font-weight: normal;
+				font-size: inherit;
+				color: inherit;
+				background:none;
+			}
+			
 			address{
 				font-size: 1.0em;
 				color: lighten(@text-color, 25%);
@@ -1325,12 +1331,7 @@ main{
 					height: 100%;
 					}
 				}
-				h4{
-						font-weight: normal;
-						font-size: inherit;
-						color: inherit;
-						background:none;
-					}
+
 				
 				
 			}//address

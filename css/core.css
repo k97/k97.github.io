@@ -5738,6 +5738,12 @@ main .blogWrapper .BPContent a:active {
   background: #2486ff;
   color: #edeef2;
 }
+main .blogWrapper .BPContent h4 {
+  font-weight: normal;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+}
 main .blogWrapper .BPContent address {
   font-size: 1.0em;
   color: #8c8c8c;
@@ -6021,12 +6027,6 @@ main .blogWrapper #BPOtherPost div a:hover {
   main .blogWrapper .BPContent address p img {
     width: 100%;
     height: 100%;
-  }
-  main .blogWrapper .BPContent address h4 {
-    font-weight: normal;
-    font-size: inherit;
-    color: inherit;
-    background: none;
   }
   #topPanel,
   .bimmerLines {
