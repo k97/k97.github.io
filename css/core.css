@@ -5846,6 +5846,10 @@ main .blogWrapper #BPOtherPost div a:hover {
   main #HPBanner h2 {
     font-size: 3.75em;
   }
+  main .blogWrapper .BPContent p img {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 850px) {
   body {
@@ -6017,6 +6021,11 @@ main .blogWrapper #BPOtherPost div a:hover {
   main .blogWrapper .BPContent address p img {
     width: 100%;
     height: 100%;
+  }
+  main .blogWrapper .BPContent address p h4 {
+    font-weight: normal;
+    font-size: inherit;
+    color: inherit;
   }
   #topPanel,
   .bimmerLines {
@@ -6231,9 +6240,19 @@ main .blogWrapper #BPOtherPost div a:hover {
   }
 }
 @media (max-height: 800px) {
+  header #theLogo {
+    margin: 0 0 2.5em 0;
+  }
+  header .subTitle {
+    margin: 0 0 2.0em 0;
+  }
   header .lineCap {
     width: 1px;
-    height: 50%;
+    height: 60%;
+  }
+  header nav ul li {
+    list-style: none;
+    margin: 1.5em 0em;
   }
 }
 @media (max-height: 638px) {
