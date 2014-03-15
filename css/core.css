@@ -5743,6 +5743,9 @@ main .blogWrapper .BPContent h4 {
   font-size: inherit;
   color: inherit;
   background: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 main .blogWrapper .BPContent address {
   font-size: 1.0em;
