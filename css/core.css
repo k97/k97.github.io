@@ -6026,6 +6026,7 @@ main .blogWrapper #BPOtherPost div a:hover {
     font-weight: normal;
     font-size: inherit;
     color: inherit;
+    background: none;
   }
   #topPanel,
   .bimmerLines {
