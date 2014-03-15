@@ -240,6 +240,34 @@ header{
     	}
     }
 
+	#subMail{
+    	float:right;
+    	text-align: center;
+    	display: block;
+    	z-index:11;
+		position:relative;
+		cursor: pointer;
+		a{
+			text-decoration: none;
+			background:#D11A30;
+			color:#f1f0f2;
+    		display: inline-block;
+    		height: 4.8em;	
+    			padding: 0em 1.5em;
+    		#subMailIcon{
+    			position: relative;
+				top: 20px;
+				font-size: 2.0em;
+			
+    		}
+    	}//a
+    	a:hover{
+    		background:@blueOne;
+    	}//a:hover
+
+
+    }//search
+
 // Search Box
 // --------------------------------------------------
 
@@ -959,6 +987,11 @@ h4{
 			font-weight: 400;
 			color: @text-color;
 			line-height: 2.0em;
+			h3{
+				margin: 2.0em 0 0 0;
+				padding: 0;
+				line-height: 0.2em;
+			}
 			h4{
 				font-weight: normal;
 				font-size: inherit;
@@ -967,6 +1000,7 @@ h4{
 				.ZeroMarPad;
 				text-align: left;
 			}
+
 
 			address{
 				font-size: 1.0em;
@@ -1016,6 +1050,57 @@ h4{
 
 
 	}//BPContent
+	#myMusic{
+		background: url(fivecmpersec.jpg) repeat-x center;
+		min-height: 400px;
+		color:#fff;
+		margin: 0.83em 0 2.5em;
+		text-align: center;
+		i{
+			text-align: center;
+			display: inline-block;
+			font-size: 3.0em;
+			border: 3px solid #fff;
+			.borderads(50%);
+			width: 100px;
+			height: 100px;
+			margin: 1.0em;
+			line-height: 2.2em;
+			padding: 0.5em;
+			.SimpleTrans;
+		}
+		.Nine{
+			text-align: left;
+			span{
+				display: block;
+				margin: 3.0em 0 1.0em;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: 1.2em;
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+				display: inline-block;
+				font-weight: 300;
+				font-size: 2.5em;
+				margin: 0.2em 0 0em;
+			}
+			a:hover{
+				border-bottom: 1px solid #fff;
+				padding-bottom: 2px;
+			}
+		}
+	}//myMusic
+	#myMusic:hover{
+		.SimpleTrans;
+		i{
+			background: #fff;
+			border-color: #8a8a8a;
+			color:#8a8a8a;
+			opacity: 0.5;
+		}
+	}
 
 	.disqusSection{
 			background:@body-bg-light;
@@ -1126,7 +1211,35 @@ h4{
 					}
 				}
 			}//BPContent
+
+			#myMusic{
+				min-height: 300px;
+				text-align: center;
+				i{
+					font-size: 2.0em;
+					border: 2px solid #fff;
+					width: 65px;
+					height: 65px;
+					margin: 1.0em;
+					line-height: 2.2em;
+
+				}
+				.Nine{
+					text-align: center;
+					span{
+						font-size: 1.0em;
+					}
+					a{
+						font-size: 1.8em;
+					}
+				}
+		}//myMusic
+
+
 		}//blogWrapper
+
+
+	
 
   	}//main
 
@@ -1134,7 +1247,7 @@ h4{
 	}
 }
 
-// MOBILE & TAB MEDIA QUERY
+// SMARTPHONE MEDIA QUERY
 // --------------------------------------------------
 @media(min-width: 500px) and (max-width: 850px){
 
@@ -1158,11 +1271,39 @@ h4{
 					}
 				}
 			}//BPContent
+
+			#myMusic{
+				min-height: 400px;
+				text-align: center;
+				i{
+					font-size: 2.5em;
+					border: 2px solid #fff;
+					width: 80px;
+					height: 80px;
+					margin: 1.0em;
+					line-height: 2.2em;
+					padding: 0.5em;
+				}
+				.Nine{
+					text-align: center;
+					span{
+						font-size: 1.1em;
+					}
+					a{
+						font-size: 2.4em;
+					}
+				}
+		}//myMusic
+
+
 		}//blogWrapper
 
 
   	}//main
 }
+
+// TAB MEDIA QUERY
+// --------------------------------------------------
 
 @media(max-width: 850px){
 	body{
@@ -1537,6 +1678,13 @@ main{
 	}
 	.blogWrapper{
 		.fadeInUp;
+
+		#myMusic{
+				min-height: 200px;
+				
+		}//myMusic
+
+
 	}
 	.paginateWrapper{
 		margin-right: 10px;
@@ -1565,6 +1713,32 @@ main{
 					}
 				}//address
 			}//BPContent
+
+			#myMusic{
+				min-height: 180px;
+				text-align: center;
+				i{
+					font-size: 1.8em;
+					border: 2px solid #fff;
+					width: 52px;
+					height: 52px;
+					margin: 1.75em 0 1.5em;
+					line-height: 2.2em;
+					
+				}
+				.Nine{
+					text-align: left;
+					span{
+						margin: 3.5em 0 1.0em;
+						font-size: 1.0em;
+					}
+					a{
+						font-size: 1.8em;
+					}
+				}
+		}//myMusic
+
+
 		}//blogWrapper
 		
 	}//main
@@ -1590,7 +1764,7 @@ main{
     		ul{
     			li{
     				list-style: none;
-	    			margin:1.5em 0em;
+	    			margin:1.25em 0em;
 	    		}
 	    	}
 	    }
@@ -1602,8 +1776,16 @@ main{
 	header{
 		overflow-y: scroll;
     	overflow-x:hidden;
+    	nav{
+    		margin-bottom: 1.0em;
+    	}
+    	.lineCap{
+		  .setWidth(1px,61%);
+		}
     	.footerLink{
   			position: relative!important;
+  			margin-top: 1.5em;
+  			padding: 0.05em 0;
   		}
 	}//header
 }

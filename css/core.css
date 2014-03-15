@@ -4884,6 +4884,30 @@ header .subTitle {
 #topPanel #search:hover #searchIcon {
   background: #2486ff;
 }
+#topPanel #subMail {
+  float: right;
+  text-align: center;
+  display: block;
+  z-index: 11;
+  position: relative;
+  cursor: pointer;
+}
+#topPanel #subMail a {
+  text-decoration: none;
+  background: #D11A30;
+  color: #f1f0f2;
+  display: inline-block;
+  height: 4.8em;
+  padding: 0em 1.5em;
+}
+#topPanel #subMail a #subMailIcon {
+  position: relative;
+  top: 20px;
+  font-size: 2.0em;
+}
+#topPanel #subMail a:hover {
+  background: #2486ff;
+}
 #topPanel #searchBox {
   display: none;
   margin-left: 6px!important;
@@ -5738,6 +5762,11 @@ main .blogWrapper .BPContent a:active {
   background: #2486ff;
   color: #edeef2;
 }
+main .blogWrapper .BPContent h3 {
+  margin: 2.0em 0 0 0;
+  padding: 0;
+  line-height: 0.2em;
+}
 main .blogWrapper .BPContent h4 {
   font-weight: normal;
   font-size: inherit;
@@ -5787,6 +5816,66 @@ main .blogWrapper .BPContent address p {
   width: 75%;
   float: right;
   display: block;
+}
+main .blogWrapper #myMusic {
+  background: url(fivecmpersec.jpg) repeat-x center;
+  min-height: 400px;
+  color: #fff;
+  margin: 0.83em 0 2.5em;
+  text-align: center;
+}
+main .blogWrapper #myMusic i {
+  text-align: center;
+  display: inline-block;
+  font-size: 3.0em;
+  border: 3px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 1.0em;
+  line-height: 2.2em;
+  padding: 0.5em;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+main .blogWrapper #myMusic .Nine {
+  text-align: left;
+}
+main .blogWrapper #myMusic .Nine span {
+  display: block;
+  margin: 3.0em 0 1.0em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+main .blogWrapper #myMusic .Nine a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 0.2em 0 0em;
+}
+main .blogWrapper #myMusic .Nine a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2px;
+}
+main .blogWrapper #myMusic:hover {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+main .blogWrapper #myMusic:hover i {
+  background: #fff;
+  border-color: #8a8a8a;
+  color: #8a8a8a;
+  opacity: 0.5;
 }
 main .blogWrapper .disqusSection {
   background: #edeef2;
@@ -5846,6 +5935,27 @@ main .blogWrapper #BPOtherPost div a:hover {
     width: 100%;
     height: 100%;
   }
+  body main .blogWrapper #myMusic {
+    min-height: 300px;
+    text-align: center;
+  }
+  body main .blogWrapper #myMusic i {
+    font-size: 2.0em;
+    border: 2px solid #fff;
+    width: 65px;
+    height: 65px;
+    margin: 1.0em;
+    line-height: 2.2em;
+  }
+  body main .blogWrapper #myMusic .Nine {
+    text-align: center;
+  }
+  body main .blogWrapper #myMusic .Nine span {
+    font-size: 1.0em;
+  }
+  body main .blogWrapper #myMusic .Nine a {
+    font-size: 1.8em;
+  }
 }
 @media (min-width: 500px) and (max-width: 850px) {
   main #HPBanner h1,
@@ -5858,6 +5968,28 @@ main .blogWrapper #BPOtherPost div a:hover {
   main .blogWrapper .BPContent p img {
     width: 100%;
     height: 100%;
+  }
+  main .blogWrapper #myMusic {
+    min-height: 400px;
+    text-align: center;
+  }
+  main .blogWrapper #myMusic i {
+    font-size: 2.5em;
+    border: 2px solid #fff;
+    width: 80px;
+    height: 80px;
+    margin: 1.0em;
+    line-height: 2.2em;
+    padding: 0.5em;
+  }
+  main .blogWrapper #myMusic .Nine {
+    text-align: center;
+  }
+  main .blogWrapper #myMusic .Nine span {
+    font-size: 1.1em;
+  }
+  main .blogWrapper #myMusic .Nine a {
+    font-size: 2.4em;
   }
 }
 @media (max-width: 850px) {
@@ -6223,6 +6355,9 @@ main .blogWrapper #BPOtherPost div a:hover {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
   }
+  main .blogWrapper #myMusic {
+    min-height: 200px;
+  }
   main .paginateWrapper {
     margin-right: 10px;
   }
@@ -6242,6 +6377,28 @@ main .blogWrapper #BPOtherPost div a:hover {
   main .blogWrapper .BPContent address p {
     width: 60%;
   }
+  main .blogWrapper #myMusic {
+    min-height: 180px;
+    text-align: center;
+  }
+  main .blogWrapper #myMusic i {
+    font-size: 1.8em;
+    border: 2px solid #fff;
+    width: 52px;
+    height: 52px;
+    margin: 1.75em 0 1.5em;
+    line-height: 2.2em;
+  }
+  main .blogWrapper #myMusic .Nine {
+    text-align: left;
+  }
+  main .blogWrapper #myMusic .Nine span {
+    margin: 3.5em 0 1.0em;
+    font-size: 1.0em;
+  }
+  main .blogWrapper #myMusic .Nine a {
+    font-size: 1.8em;
+  }
 }
 @media (max-height: 800px) {
   header #theLogo {
@@ -6256,7 +6413,7 @@ main .blogWrapper #BPOtherPost div a:hover {
   }
   header nav ul li {
     list-style: none;
-    margin: 1.5em 0em;
+    margin: 1.25em 0em;
   }
 }
 @media (max-height: 638px) {
@@ -6264,8 +6421,17 @@ main .blogWrapper #BPOtherPost div a:hover {
     overflow-y: scroll;
     overflow-x: hidden;
   }
+  header nav {
+    margin-bottom: 1.0em;
+  }
+  header .lineCap {
+    width: 1px;
+    height: 61%;
+  }
   header .footerLink {
     position: relative!important;
+    margin-top: 1.5em;
+    padding: 0.05em 0;
   }
 }
 #insMsg {
