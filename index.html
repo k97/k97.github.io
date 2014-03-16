@@ -12,13 +12,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-    <!-- build:css(.tmp) css/core.css -->
+    <!-- build:css(.tmp) css/core.css 
     <link rel="stylesheet" type="text/css"  href="css/core.css">
-	
+	-->
 
-    <!--  dev:less less/core.less
+    <!--  dev:less less/core.less-->
     <link rel="stylesheet/less" type="text/less"  href="less/core.less">
-	 -->
+	 
 
     <!--  FAVICONS -->	
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
@@ -36,7 +36,15 @@
 	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
 	<meta name="msapplication-TileColor" content="#2b3238">
 	<meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
-</head>
+	<script type="text/javascript">
+  (function(d) {
+    var config = {
+      kitId: 'ued8uuc',
+      scriptTimeout: 3000
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 <body ng-controller="MainCtrl" ng-cloak>
 	<sham-spinner></sham-spinner>	
 	
