@@ -24,6 +24,7 @@ $routeProvider
             templateUrl: 'template/detail.html',
             controller: "DetailWorkInfo"
         })
+
     .when('/blog',
         {
             templateUrl: 'blog/blog.html',
@@ -32,6 +33,11 @@ $routeProvider
     .when('/subscribe', 
         {   
             templateUrl: 'template/subscribe.html',
+            controller: "MailCtrl"
+        })
+    .when('/awkward-me/', 
+        {   
+            templateUrl: 'template/old-abt-me.html',
             controller: "MailCtrl"
         })
     .otherwise( {redirectTo: '/home'});
