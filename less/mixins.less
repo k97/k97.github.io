@@ -1,0 +1,125 @@
+// Zero Margin Padding
+// --------------------------------------------------
+.ZeroMarPad{
+  margin:0;
+  padding:0;
+}
+
+// Width & Height
+// --------------------------------------------------
+.setWidth(@ele_width,@ele_height){
+    width:@ele_width;
+    height:@ele_height;
+}
+
+// Border Radius
+// --------------------------------------------------
+.borderads(@rad) {
+  -webkit-border-radius: @rad;
+     -moz-border-radius: @rad;
+       -o-border-radius: @rad;
+          border-radius: @rad;
+}
+
+
+// Transition
+// --------------------------------------------------
+.TransitionMix{
+    -webkit-transition: background 0s linear;
+      -moz-transition: background 0s linear;
+        -o-transition: background 0s linear;
+          transition: background 0s linear;
+}
+
+.SimpleTrans{
+    -webkit-transition:all 0.5s ease;
+        -moz-transition:all 0.5s ease;
+            -o-transition:all 0.5s ease;
+                transition:all 0.5s ease;
+}
+
+// Gradients
+// --------------------------------------------------
+
+
+.lineShotGrad{
+            background-color: @navBgDark;
+            background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, @hoverShoot), color-stop(5%, @hoverShoot), color-stop(5%, @navBgDark), color-stop(100%, @navBgDark));
+            background: -webkit-linear-gradient(left, @hoverShoot ,@hoverShoot 5%,@navBgDark 5%,@navBgDark);
+            background: -moz-linear-gradient(left, @hoverShoot,@hoverShoot 5%,@navBgDark 5%,@navBgDark);
+            background: -o-linear-gradient(left, @hoverShoot,@hoverShoot 5%,@navBgDark 5%,@navBgDark);
+            background: linear-gradient(left, @hoverShoot,@hoverShoot 5%,@navBgDark 5%,@navBgDark);
+}
+
+
+.verticalGradient(@gradColorOne, @gradColorTwo) {
+    background: @gradColorOne;
+    background: -moz-linear-gradient(left, @gradColorOne 0%, @gradColorOne 29%, @gradColorOne 49%, @gradColorTwo 50%, @gradColorTwo 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, @gradColorOne), color-stop(29%, @gradColorOne), color-stop(49%, @gradColorOne), color-stop(50%, @gradColorTwo), color-stop(100%, @gradColorTwo));
+    background: -webkit-linear-gradient(left, @gradColorOne 0%, @gradColorOne 29%, @gradColorOne 49%, @gradColorTwo 50%, @gradColorTwo 100%);
+    background: -o-linear-gradient(left, @gradColorOne 0%, @gradColorOne 29%, @gradColorOne 49%, @gradColorTwo 50%, @gradColorTwo 100%);
+    background: -ms-linear-gradient(left, @gradColorOne 0%, @gradColorOne 29%, @gradColorOne 49%, @gradColorTwo 50%, @gradColorTwo 100%);
+    background: linear-gradient(to right, @gradColorOne 0%, @gradColorOne 29%, @gradColorOne 49%, @gradColorTwo 50%, @gradColorTwo 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@gradColorOne', endColorstr='@gradColorTwo', GradientType=1 );
+}
+
+
+// Box sizing
+// --------------------------------------------------
+.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model; // Safari <= 5
+     -moz-box-sizing: @box-model; // Firefox <= 19
+          box-sizing: @box-model;
+}
+
+
+// Placeholder
+// --------------------------------------------------
+.placehold(@color: #ccc,@ftFamily,@ftStyle,@ftSize) {
+  font-family: @ftFamily;
+  font-style: @ftStyle;
+  font-size:@ftSize;
+  input::-webkit-input-placeholder { color: @color; }
+  input:-moz-placeholder { color: @color; }
+  textarea::-webkit-input-placeholder { color: @color; }
+  textarea:-moz-placeholder { color: @color; }
+}
+
+// FadeInDown Animation
+// --------------------------------------------------
+.fadeIn{
+   .animated;
+   .fadeIn;
+}
+
+.fadeInDown{
+    .animated;
+    .fadeInDown;
+}
+.fadeInUp{
+    .animated;
+    .fadeInUp;
+}
+
+.fadeInRight{
+    .animated;
+    .fadeInRight;
+}
+
+.fadeInLeft{
+    .animated;
+    .fadeInLeft;
+}
+
+.slideInDown{
+  .animated;
+  .slideInDown;
+}
+.bounceOut{
+    .animated;
+    .bounceOut
+}
+.bounceIn{
+    .animated;
+    .bounceIn;
+}

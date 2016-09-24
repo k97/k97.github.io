@@ -1,0 +1,199 @@
+[
+    {
+        "id": 0,
+        "prID": "ERM",
+        "prColor": "#E83754",
+        "prImgThumb": "ERM.png",
+        "prImgThumbInv": "ERM-w.png",
+        "prImgs": [
+            "1_erm/er_1.jpg",
+            "1_erm/er_2.jpg",
+            "1_erm/er_3.jpg"
+        ],
+        "prTitle": "Eternal Rock Ministries",
+        "prDesc": "Eternal Rock Ministries website is a charity website. When ERM approached me to upgrade their exisiting website, we collectively agreed for a minimalistic approach, as it will help bring down the project costs. I did not want to degrade the quality of the website and most importantly, I was happy to work for such a good cause. I built a dynamic website with a CMS which eases work on future upgrades & additional pages and they were happy to see the output. Eternal Rock Ministries carries out important charity works that is much needed in this part of the world and I am happy to help them in a way.",
+        "prRole": "Designer & Developer",
+        "prFunctions": [
+            "Digital Strategy",
+            "Design",
+            "User Experience (UX)",
+            "Information Architecture (IA)",
+            "Development",
+            "XHTML 1.0 Transitional",
+            "Cross Browser Testing",
+            "Digital Support"
+        ]
+    },
+    {
+        "id": 1,
+        "prID": "MAapp",
+        "prColor": "#009A76",
+        "prImgThumb": "MA.png",
+        "prImgThumbInv": "MA-w.png",
+        "prImgs": [
+            "3_ma/ma_1.jpg",
+            "3_ma/ma_2.jpg",
+            "3_ma/ma_3.jpg"
+        ],
+        "prTitle": "Mobile Accountant",
+        "prDesc": "Mobile Accountant was one of the app that I designed when I was working at Karya. This was my debut into mobile application design which gave me a broader prespective into mobile app design and development. I went on further with designing & developing apps at Karya but won't be able to list them here due to NDA constraints. Also, I remember publishing a blog post about designing applications interfaces for Android platform at Medium.",
+        "prRole": "UI Designer",
+        "prFunctions": [
+            "Prototyping",
+            "Concept design",
+            "User Interface design",
+            "User Experience (UX)",
+            "Andriod & iOS"
+        ]
+    },
+    {
+        "id": 2,
+        "prID": "CRICNEST",
+        "prColor": "#0D9FE7",
+        "prImgThumb": "cricnest.png",
+        "prImgThumbInv": "cricnest-w.png",
+        "prImgs": [
+            "2_cricnest/cn_1.jpg",
+            "2_cricnest/cn_2.jpg",
+            "2_cricnest/cn_3.jpg",
+            "2_cricnest/cn_4.jpg"
+        ],
+        "prTitle": "CricNest",
+        "prDesc": "CricNest was a breath of fresh air from the regular projects I have worked previously. It was product targetting grass root cricket in India and I was glad to contribute.",
+        "prRole": "Branding & Web Design",
+        "prFunctions": [
+            "Branding",
+            "Concept design",
+            "User Experience (UX)",
+            "Development",
+            "HTML5 & CSS3",
+            "Cross Browser Testing",
+            "Print Media"
+        ]
+    },
+    {
+        "id": 3,
+        "prID": "SON",
+        "prColor": "#DB2822",
+        "prImgThumb": "SON.png",
+        "prImgThumbInv": "SON-w.png",
+        "prImgs": [
+            "4_son/son_1.jpg",
+            "4_son/son_2.jpg",
+            "4_son/son_3.jpg"
+        ],
+        "prTitle": "Son Design Agency",
+        "prDesc": "When Son Design Agency approached me for a website project, I accepted the offer gladly. This was one of the first reponsive sites that I designed on and its works seemlessly across tablet screens and also across most of the desktop screens. There is long way to go in getting the hang of the responsive webpages and I am happy to start the RWD with SON design agency.",
+        "prRole": "Web Design & Development",
+        "prFunctions": [
+            "Design",
+            "Creative Consulting",
+            "User Experience (UX)",
+            "HTML5 & CSS3",
+            "Development",
+            "Cross Browser Testing",
+            "JS/jQuery",
+            "Information Architecture (IA)",
+            "Digital Support"
+        ]
+    },
+    {
+        "id": 4,
+        "prID": "SPM",
+        "prColor": "#F29200",
+        "prImgThumb": "SPM.png",
+        "prImgThumbInv": "SPM-w.png",
+        "prImgs": [
+            "2_spm/spm_1.jpg",
+            "2_spm/spm_2.jpg",
+            "2_spm/spm_3.jpg",
+            "2_spm/spm_4.jpg"
+        ],
+        "prTitle": "SPM Charitable Trust",
+        "prDesc": "SPM Charitable project was similar to ERM project with the only difference that everything had to built from scratch. I had to do some branding work which included logo creation, print media and a website. The logo and the brand colors were chosen with client's advise and alike ERM we planned  keep the costs down. There is brief blog post which I published when I completed this project.",
+        "prRole": "Branding & Web Design & Development",
+        "prFunctions": [
+            "Branding",
+            "Brand Strategy",
+            "Concept design",
+            "User Experience (UX)",
+            "Development",
+            "XHTML 1.0 Transitional",
+            "Cross Browser Testing",
+            "Digital Support",
+            "Javascript Animation",
+            "Information Architecture (IA)",
+            "Print Media"
+        ]
+    },
+    {
+        "id": 5,
+        "prID": "ORRCHID",
+        "prColor": "#8DC04A",
+        "prImgThumb": "Orrchid.png",
+        "prImgThumbInv": "Orrchid-w.png",
+        "prImgs": [
+            "5_orrchid/orrchid_1.jpg",
+            "5_orrchid/orrchid_2.jpg",
+            "5_orrchid/orrchid_3.jpg"
+        ],
+        "prTitle": "Orrchid Impressions",
+        "prDesc": "Orrchid Impressions is a design agency specialised in printing & photography. I was commisioned to work on a mailer and the supportive landing website. It was a RWD project for both the mailer and the website.",
+        "prRole": "Branding, Web Design & Development",
+        "prFunctions": [
+            "Email Design",
+            "User Experience (UX)",
+            "Development",
+            "Concept Generation"
+        ]
+    },
+    {
+        "id": 6,
+        "prID": "GWS",
+        "prColor": "#029E93",
+        "prImgThumb": "GWS.png",
+        "prImgThumbInv": "GWS-w.png",
+        "prImgs": [
+            "6_greenware/gg_1.jpg",
+            "6_greenware/gg_2.jpg",
+            "6_greenware/gg_3.jpg"
+        ],
+        "prTitle": "Greenware Systems",
+        "prDesc": "Greenware Group consists of Greenware Systems and Garc web services. I have partnered with Greenware at times to work on their in-house projects. There wasn't any objective or rules assigned and it is very rare to get projects like Greenware, where I was given entire freedom to work. I started to work from scratch to create a brand and structure it with a proper presentation digitally.",
+        "prRole": "Branding, Web Design & Development",
+        "prFunctions": [
+            "Branding",
+            "Brand Strategy",
+            "Concept design",
+            "User Experience (UX)",
+            "Development",
+            "XHTML 1.0 Transitional",
+            "Cross Browser Testing",
+            "Digital Support",
+            "Information Architecture (IA)",
+            "Print Media"
+        ]
+    },
+    {
+        "id": 7,
+        "prID": "NPC",
+        "prColor": "#0157A4",
+        "prImgThumb": "NPC.png",
+        "prImgThumbInv": "NPC-w.png",
+        "prImgs": [
+            "7_npc/npc_1.jpg",
+            "7_npc/npc_2.jpg",
+            "7_npc/npc_3.jpg",
+            "7_npc/npc_4.jpg"
+        ],
+        "prTitle": "New Prints Creations",
+        "prDesc": "New Print Creations is startup specialised in print media. They came to me for a rebranding and also for a website development. I presented few new concepts and also a website designed purposely to exhibit their work.",
+        "prRole": "Branding, Web Design & Development",
+        "prFunctions": [
+            "Brand Strategy",
+            "User Experience (UX)",
+            "Design",
+            "Concept Generation"
+        ]
+    }
+]
